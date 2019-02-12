@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body {background: #f5f5f5; color: #333;}
+
+.com-ft {text-align: center; margin-top: 55px; font-size: 30px; line-height:30px; /*font-family: 'Nanum Gothic';*/}
+
+.rsv-wrap {position:relative; width:1100px; margin:0 auto; padding:90px 0 100px; /*font-family: 'Nanum Gothic';*/}
+.rsv-wrap caption {position:absolute; font-size:0; text-indent:-99999px;}
+
+/* 탭 */
+.rsv-tab {position:relative; width:100%; margin-top:3px; border-bottom:1px solid #314c74}
+.rsv-tab li {display:block; position:relative; box-sizing:border-box; float:left; width:204px; height:60px; border:1px solid #b9b9b9; border-bottom:0; border-right:0; background:#f7f8fa}
+.rsv-tab .tab-rsv-01 {}
+.rsv-tab .tab-rsv-02 {}
+.rsv-tab .tab-rsv-03 {border-right:1px solid #b9b9b9;}
+.rsv-tab .on {border-color:#314c74; background:#314c74}
+.rsv-tab .on + li {border-left:0; padding-left:1px;}
+.rsv-tab li a {display:block; font-size:16px; font-weight:600; text-align:center; line-height:60px; color:#686868}
+.rsv-tab .on a {color:#fff}
+
+/* 개월수 */
+.rsv-day-area {position:relative; display:block; margin:24px auto 8px;}
+.rsv-day-area .rsv-day-list {position:relative; display:inline-block; float:right;}
+.rsv-day-area .rsv-day-list li {position:relative; display:block; float:left; box-sizing:border-box; width:60px; height:24px; text-align:center; border:1px solid #d7d7d7; border-left:0; background:-webkit-linear-gradient(#fff 35%, #f7f7f8); background:-moz-linear-gradient(#fff 35%, #f7f7f8); background:-o-linear-gradient(#fff 35%, #f7f7f8); background:linear-gradient(#fff 35%, #f7f7f8); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f8',GradientType=0 );}
+.rsv-day-area .rsv-day-list li:first-child {border-left:1px solid #d7d7d7}
+.rsv-day-area .rsv-day-list li a {position:relative; display:block; font-size:13px; line-height:22px; color:#424242}
+
+/* 예약 조회 테이블 */
+.rsv-list-area {margin-bottom:105px;}
+.rsv-col-box {position: relative; text-align:center}
+.rsv-col-box .rsv-col {width:100%; border-collapse:collapse; border-top:2px solid #616e7b;}
+.rsv-col-box .rsv-col .nth-1 {width:148px;}
+.rsv-col-box .rsv-col .nth-2 {width:388px;}
+.rsv-col-box .rsv-col .nth-3 {width:248px;}
+.rsv-col-box .rsv-col .nth-4 {width:163px;}
+.rsv-col-box .rsv-col .nth-5 {width:153px;}
+.rsv-col-box .rsv-col thead {}
+.rsv-col-box .rsv-col thead tr {}
+.rsv-col-box .rsv-col thead th {padding:23px 0 22px; font-size:15px; font-weight:600; border:1px solid #d0d1d3; border-right:0; background:#eef0f6}
+.rsv-col-box .rsv-col thead th:first-child {border-left:0}
+.rsv-col-box .rsv-col tbody {color:#232323;}
+.rsv-col-box .rsv-col tbody tr {}
+.rsv-col-box .rsv-col tbody td {padding:30px 0 32px; text-align:center; font-size:16px; line-height:27px; border-bottom:1px solid #bbb; background: #fff}
+.rsv-col-box .rsv-col .btn-rcp {display:inline-block; box-sizing:border-box; width:80px; height:27px; font-size:13px; line-height:25px; text-align:center; color:#424242; border:1px solid #d4d4d4; background:#f7f7f9}
+.rsv-col-box .rsv-col tbody .no {}
+.rsv-col-box .rsv-col tbody .no td {padding:44px 0 40px;font-size:17px; color:#919191;}
+
+.rsv-num-box {position:relative; margin:0 auto; text-align:center}
+.rsv-num-box .pagenation {display: inline-block; margin-top: 15px; text-align:center; border: 1px solid #ddd; border-radius:4px;}
+.rsv-num-box .pagenation > li {float:left;}
+.rsv-num-box .pagenation > li > a {display: inline-block; width: 36px; text-align: center; padding: 12px 0; font-size: 16px; background: #fff; color: #398fe1; border-left: 1px solid #ddd;}
+.rsv-num-box .pagenation > li:first-child > a {border-left: none; border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
+.rsv-num-box .pagenation > li.first > a {color: #565656;}
+.rsv-num-box .pagenation > li.last > a {color: #565656;}
+.rsv-num-box .pagenation > li:last-child > a {border-top-right-radius: 4px; border-bottom-right-radius: 4px; color: #565656;}
+.rsv-num-box .pagenation > li > a:active, .pagenation > li.on > a {color: #fff; background: #398fe1;}
+
+/* 예약 상세보기 */
+.rsv-detail-area {margin-top:30px;}
+.rsv-detail-area .rsv-detail-tit {position:relative; margin-left:7px; font-size:18px; line-height:18px; font-weight:600; vertical-align:middle; color:#232323}
+.rsv-detail-area .rsv-detail-tit:before {content:''; display:inline-block; width:7px; height:13px; margin-right:5px; background:url(http://img.coresco.co.kr/reservation/img_tit_arrow.png) no-repeat;}
+.rsv-row-box {margin-top:15px;}
+.rsv-row-box + .rsv-row-box {margin-top:28px;}
+.rsv-row-box .rsv-row {position:relative; width:100%;}
+.rsv-row-box .rsv-row li {display:table; border-collapse:collapse; width:100%; color:#232323; border-bottom:1px solid #d0d1d3}
+.rsv-row-box .rsv-row li:first-child {border-top:1px solid #d0d1d3}
+.rsv-row-box .rsv-row li .th, .rsv-row-box .rsv-row li .td {display:table-cell; box-sizing:border-box; padding:18px 0; word-break:keep-all; vertical-align:middle}
+.rsv-row-box .rsv-row li .th {width:195px; padding-left:18px; padding-right:15px; font-size:16px; line-height:22px; color:#383838; border-right:1px solid #d0d1d3; background:#eef0f6}
+.rsv-row-box .rsv-row li .td {font-size:17px; line-height:23px; padding-left:30px; padding-right:30px;}
+.rsv-row-box .rsv-row li .btn-box {padding-top:11px; padding-bottom:10px}
+.rsv-row-box .rsv-row li .btn-box a {display:inline-block; position:relative; box-sizing:border-box; width:89px; height:29px; margin-right:12px; font-size:13px; font-weight:600; line-height:27px; text-align:center; border:1px solid;}
+.rsv-row-box .rsv-row .btn-check {color:#fa6c0a; border-color:#fa7418; background:none}
+.rsv-row-box .rsv-row .btn-rcp {color:#696d76; border-color:#72767e; background:#fff}
+
+/* 취소 수수료 안내 */
+.rsv-row-box .cancel-guide-box {width:700px; padding-bottom:27px;}
+.cancel-guide-box .cancel-col {position:relative; width:100%; margin-top:20px; border-collapse:collapse; color:#232323; text-align:center; border:1px solid #adadad}
+.cancel-guide-box .cancel-col .nth-1 {width:20%;}
+.cancel-guide-box .cancel-col .nth-2 {width:20%;}
+.cancel-guide-box .cancel-col .nth-3 {width:30%;}
+.cancel-guide-box .cancel-col .nth-4 {width:30%;}
+.cancel-guide-box .cancel-col th, .cancel-guide-box .cancel-col td {font-size:16px; }
+.cancel-guide-box .cancel-col th {padding:13px 0 11px; background:#f7f7f7}
+.cancel-guide-box .cancel-col td {padding:8px 0 6px; border-top:1px solid #dcdcdc; background:#fff}
+.cancel-guide-box .cancel-col td:first-child {padding-left:30px; text-align:left}
+
+/* 버튼 */
+.rsv-btn-area {position:relative; margin:0 auto; margin-top:53px; text-align:center}
+.rsv-btn-area .btn-rsv {display:inline-block; width:165px; height:45px; font-size:16px; font-weight:600; line-height:45px; color:#fff; border-radius:4px; background:#398fe1}
+
+/* 진행 순서 안내 */
+.rsv-guide-area {margin:0 auto; padding-bottom:5px;}
+.rsv-guide-area .rsv-guide-tit {font-size:18px; line-height:18px; font-weight:600; color:#232323}
+.rsv-guide-area .img {position:relative; display:block; width:70px; height:45px; margin:0 auto; text-align:center; background:url(http://img.coresco.co.kr/reservation/rsv_list.png); background-repeat:no-repeat;}
+.rsv-guide-area li p {font-size:16px; line-height:20px; word-break:keep-all; color:#555}
+.rsv-guide-area .guide-tit {font-weight:600;}
+.rsv-guide-area .guide-tit span {display:inline-block; margin-right:4px; font-style:italic; letter-spacing:0}
+.rsv-guide-area .guide-txt {font-weight:500;}
+.rsv-guide-area .on .img {background:url(http://img.coresco.co.kr/reservation/rsv_list_on.png);}
+.rsv-guide-area .on .guide-tit {color:#314c74}
+
+.rsv-guide-area .rsv-order-list {position:relative; box-sizing:border-box; width:100%; margin-top:12px; padding:11px 0 10px 20px; border:1px solid #b9b9b9; background:#fff}
+.rsv-guide-area .rsv-order-list li {float:left; position:relative; padding-left:16px; text-align:center; }
+.rsv-guide-area .rsv-order-list li:first-child {padding-left:0}
+.rsv-guide-area .rsv-order-list .nth-1 {width:185px;}
+.rsv-guide-area .rsv-order-list .nth-2 {width:181px;}
+.rsv-guide-area .rsv-order-list .nth-3 {width:194px;}
+.rsv-guide-area .rsv-order-list .nth-4 {width:214px;}
+.rsv-guide-area .rsv-order-list .nth-5 {width:240px;}
+.rsv-guide-area .rsv-order-list li:before {content:''; display:block; position:absolute; width:16px; height:100%; left:0; background:url(http://img.coresco.co.kr/reservation/img_list_arrow.png); background-repeat:no-repeat; background-position:center}
+.rsv-guide-area .rsv-order-list li:first-child:before {content:none}
+.rsv-guide-area .rsv-order-list li .img {margin-bottom:3px;}
+.rsv-guide-area .rsv-order-list .nth-1 .img {background-position:0px 0;}
+.rsv-guide-area .rsv-order-list .nth-2 .img {background-position:-70px 0;}
+.rsv-guide-area .rsv-order-list .nth-3 .img {background-position:-140px 0;}
+.rsv-guide-area .rsv-order-list .nth-4 .img {background-position:-210px 0;}
+.rsv-guide-area .rsv-order-list .nth-5 .img {background-position:-280px 0;}
+.rsv-guide-area .rsv-order-list li p {font-size:15px; line-height:18px;}
+
+.rsv-guide-area .rsv-guide-list {position:relative; box-sizing:border-box; width:100%; margin-bottom:55px; padding:0 30px; border:1px solid #b9b9b9; border-top:0; background:#eef0f6}
+.rsv-guide-area .rsv-guide-list li {position:relative; box-sizing:border-box; padding:18px 25px 18px 0; border-top:1px solid #c6c7ca}
+.rsv-guide-area .rsv-guide-list li:first-child {border-top:0}
+.rsv-guide-area .rsv-guide-list .nth-1 {}
+.rsv-guide-area .rsv-guide-list .nth-2 {}
+.rsv-guide-area .rsv-guide-list .nth-3 {}
+.rsv-guide-area .rsv-guide-list .nth-4 {}
+.rsv-guide-area .rsv-guide-list .nth-5 {}
+.rsv-guide-area .rsv-guide-list li > div {display:table-cell; vertical-align:middle;}
+.rsv-guide-area .rsv-guide-list .img-box {width:175px;}
+.rsv-guide-area .rsv-guide-list .img-box .img {}
+.rsv-guide-area .rsv-guide-list .nth-1 .img {background-position:-5px -55px;}
+.rsv-guide-area .rsv-guide-list .nth-2 .img {background-position:-75px -55px;}
+.rsv-guide-area .rsv-guide-list .nth-3 .img {background-position:-145px -55px;}
+.rsv-guide-area .rsv-guide-list .nth-4 .img {background-position:-215px -55px;}
+.rsv-guide-area .rsv-guide-list .nth-5 .img {background-position:-285px -55px;}
+.rsv-guide-area .rsv-guide-list .txt-box {padding-left:5px;}
+.rsv-guide-area .rsv-guide-list .guide-txt {margin-top:6px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

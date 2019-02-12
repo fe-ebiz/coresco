@@ -1,0 +1,62 @@
+@charset ("utf-8");
+/* css 초기화 */
+@import url(http://static.coresco.co.kr/css/reset.css);
+@import url(http://static.onbiz.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body, * {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px;}
+body {color: #3a3434;}
+button {cursor: pointer; border: none; background: none;}
+a {text-decoration:none; color: #434343;}
+
+/* 공통속성 css */
+.dropdown {position: relative;}
+.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none;}
+.dropdown .btn span {position: relative; font-size: 10px; color: #398FE2;}
+.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
+.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
+.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+/* 색상 */
+.c-blue {color: #00AEEF;}
+
+/* 전체 */
+#wrap {min-width: 1000px;}
+
+/* header영역 */
+.header {background: #fff; width: 100%; border-bottom: 1px solid #ddd; height: 134px;}
+.gnb-wrap {border-bottom: 1px solid #ddd; background-color: #314c74;}
+.gnb-menu {width: 1000px; height: 38px; margin: 0 auto; color: #fff; font-size: 14px; text-align: right; line-height: 38px;}
+.gnb-menu a {color: #fff;}
+.header-box {position: relative; width: 1000px; margin: 0 auto; padding-top: 30px;}
+.header-box > h2 {position: relative; float: left;}
+.navbar-brand {position: relative; display: inline-block; top: -5px; width: 108px; height: 28px;}
+.navbar-brand img {width: 108px;}
+
+.main-nav {position: relative; float: right; padding-top: 6px;}
+.main-nav li {float: left; font-size: 20px; margin-left: 40px;}
+.main-nav li:first-child {margin-left: 0;}
+
+/*header fixed*/
+.header.affix {left: 0; top: 0px; z-index: 11; display: none;}
+
+/* footer영역 */
+/* .footer {height: 126px; width: 100%; padding: 40px 0; background: #323232; color: #6b6b6b; letter-spacing: 0;}
+.footer .f-outer {width: 1000px; margin: 0 auto;}
+.footer .f-outer > div {float: left;}
+.footer .f-logo-box {position: relative; top: 7px;}
+.footer .f-txt-box { position:absolute; margin-top:60px;}
+.footer address {font-size: 15px; line-height: 1.5em;}
+.footer small {font-size: 12px;}
+.footer small span {color: #00ADEF; margin: 0 3px;} */
+.footer {height: 290px; width: 100%; padding: 40px 0; background: #323232; color: #6b6b6b; letter-spacing: 0;}
+.footer .f-outer {width: 1000px; margin: 0 auto;}
+.footer .f-logo-box {display: inline-block; position: relative; top: 2px; margin-bottom: -2px;}
+.footer .f-logo-box + div {float: right; width: 240px;}
+.footer .f-logo-box + div > img {margin-bottom: 1px;}
+.footer .f-logo-box + div > img:last-child {margin-bottom: 0px;}
+.footer .f-txt-box { position:absolute; margin-top:30px;}
+.footer address {font-size: 16px; line-height: 1.5em; margin-bottom: 16px;}
+.footer address + div > div {font-size: 14px; margin-bottom: 12px; line-height: 1.4em;}
+.footer address + div > div > p + p {margin-top: 5px;}
+.footer small {font-size: 12px;}
+.footer small span {color: #00ADEF; margin: 0 3px;}

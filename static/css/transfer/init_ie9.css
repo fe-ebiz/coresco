@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/* faq */
+.msc-tab-area .faq-area .faq-list .f-q .ic-bArrow:after {content:'▼'; font-size:22px; border-width:0; width:22px; height:22px; margin-top:-12px; color:#3f3f3f;}
+.msc-tab-area .faq-area .faq-list .on .ic-bArrow {margin-top:-15px;}
+.msc-tab-area .faq-area .faq-list .on .ic-bArrow:after {content:'▲'; color:#314c74; border-color:none;}

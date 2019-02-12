@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.rsv-wrap {position:relative; background:#f5f5f5;}
+
+.rsv-wrap .tit {padding-top:15px; font-size:18px; font-weight:normal; color:#2c2c2c;}
+
+/* 탭 */
+.rsv-tab {position:relative; width:100%; border-top:1px solid #b9b9b9; border-bottom:2px solid #314c74}
+.rsv-tab li {display:block; position:relative; box-sizing:border-box; float:left; width:33.3%; height:49px; border:1px solid #b9b9b9; border-top:0; border-bottom:0; border-right:0; background:#f7f8fa}
+.rsv-tab .tab-rsv-01 {border-left:0;}
+.rsv-tab .tab-rsv-02 {}
+.rsv-tab .tab-rsv-03 {}
+.rsv-tab .on {background:#314c74}
+.rsv-tab li a {display:block; font-size:15px; font-weight:400; text-align:center; line-height:49px; color:#686868}
+.rsv-tab .on a {color:#fff}
+
+/* 예약 조회 */
+.arrow-r:before {content:''; display:block; position:absolute; width:8px; height:8px; top:50%; margin-top:-4px; border:1px solid; border-left:0; border-top:0; background-color:transparent; -webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
+.rsv-wrap .btn-rsv {position:relative; display:inline-block; box-sizing:border-box; color:#fff; background:#125195}
+
+.rsv-list-area {min-height:410px; padding-bottom:65px;}
+.rsv-list-box {position: relative;}
+/* 조회내역 없을경우 */
+.rsv-list-box .rsv-list-no {padding-top:35%; text-align:center}
+.rsv-list-box .rsv-list-no .rsv-no-txt {padding-top:63px; font-size:17px; font-weight:300; line-height:17px; letter-spacing:0.5px; color:#969696; background:url(http://img.coresco.co.kr/m/reservation/img_no_rsv.png) no-repeat center 0; background-size:50px auto}
+.rsv-list-box .rsv-list-no .btn-area {margin-top:25px;}
+.rsv-list-box .rsv-list-no .btn-area .btn-rsv {width:180px; height:52px; font-size:15px; line-height:52px;}
+.rsv-list-box .rsv-list-no .btn-area .btn-rsv.arrow-r {padding-right:15px;}
+.rsv-list-box .rsv-list-no .btn-area .btn-rsv.arrow-r:before {right:25px; border-color:#fff;}
+/* 조회내역 있을경우 */
+.rsv-list-box .rsv-list {padding:0 10px;}
+.rsv-list-box .rsv-list li {position:relative; display:block; box-sizing:border-box; width:100%; margin-top:15px; border:1px solid #d3d3d3;}
+.rsv-list-box .rsv-list .list-top-box {position:relative; padding:10px 10px; border-bottom:1px solid #d3d3d3; background:#fafafa}
+.rsv-list-box .rsv-list .list-top-box span {float:right; display:inline-block; font-size:12px; color:#9a9a9a}
+.rsv-list-box .rsv-list .list-top-box span:first-child {float:left}
+.rsv-list-box .rsv-list .list-top-box .day {letter-spacing:0.5px}
+.rsv-list-box .rsv-list .list-txt-box {position:relative; padding:13px 45px 10px 10px; color:#232323; background:#fff}
+.rsv-list-box .rsv-list .list-txt-box.arrow-r:before {right:18px;border-color:#9a9a9a;}
+.rsv-list-box .rsv-list .list-txt-box p {word-break:keep-all}
+.rsv-list-box .rsv-list .list-txt-box .rsv-list-tit {font-size:16px; line-height:20px; font-weight: 600;}
+.rsv-list-box .rsv-list .list-txt-box .rsv-list-txt {font-size:14px; line-height:14px; font-weight: 600;}
+.rsv-list-box .rsv-list .list-txt-box .day {padding:8px 0 7px; font-size:15px; line-height:15px; }
+
+.rsv-list-area .rsv-num-box {position:absolute; width:100%; bottom:15px;}
+
+/* 예약 상세보기 */
+.rsv-detail-area {position:relative; box-sizing:border-box; padding:0 16px 35px;}
+.rsv-detail-box {padding-top:20px;}
+.rsv-detail-box .rsv-detail-tit {padding-bottom:7px; font-size:15px; font-weight:600; line-height:15px; color:#242424; border-bottom:2px solid #333}
+.rsv-detail-box .rsv-row-box {}
+.rsv-detail-box .rsv-row-box .rsv-row {border-bottom:2px solid #cecece}
+.rsv-detail-box + .rsv-detail-box .rsv-row-box .rsv-row {border-bottom-width:1px;}
+.rsv-detail-box .rsv-row li {padding:14px 0 15px; border-top:1px solid #cecece}
+.rsv-detail-box .rsv-row li:first-child {border-top:0}
+.rsv-detail-box .rsv-row li:before, .rsv-detail-area .rsv-row li:after {content:''; display:block; clear:both}
+.rsv-detail-box .rsv-row li p {font-size:13px; color:#242424}
+.rsv-detail-box .rsv-row li .th {float:left}
+.rsv-detail-box .rsv-row li .td {float:right;}
+
+.rsv-detail-area .btn-area {margin-top:20px}
+.rsv-detail-area .btn-area .btn-rsv {width:147px; height:46px; font-size:13px; line-height:46px}
+
+/* 취소 수수료 안내 */
+.rsv-detail-area .cancel-guide-area {position:relative; box-sizing:border-box; margin-top:14px; padding:12px 13px 18px; border:1px solid #e7e7e7; background:#fff}
+.cancel-guide-area p {margin-left:-5px; line-height:16px; word-break:keep-all;}
+.cancel-guide-area .cancel-tit {font-size:13px; color:#242424}
+.cancel-guide-area .cancel-txt {margin-top:8px; font-size:12px; color:#232323}
+.cancel-guide-area .cancel-col {box-sizing:border-box; width:100%; border-collapse:collapse; margin-top:11px; text-align:center;}
+.cancel-guide-area .cancel-col .nth-1 {width:32%}
+.cancel-guide-area .cancel-col .nth-2 {width:22%}
+.cancel-guide-area .cancel-col .nth-3 {width:24%}
+.cancel-guide-area .cancel-col .nth-4 {width:22%}
+.cancel-guide-area .cancel-col th, .cancel-guide-area .cancel-col td {font-size:13px; line-height:15px; border:1px solid #bcbcbc; border-right:0}
+.cancel-guide-area .cancel-col th:first-child, .cancel-guide-area .cancel-col td:first-child {border-left:0}
+.cancel-guide-area .cancel-col th {padding:7px 0 6px; color:#000; border-bottom:0; background:#f5f5f5}
+.cancel-guide-area .cancel-col td {padding:5px 0; color:#737373; background:#fff}
+
+
+
+
+
+
+
+
+

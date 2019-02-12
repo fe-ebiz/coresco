@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {font-family:'Noto Sans Kr', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; letter-spacing:-1px; color:#282828;}
+
+/** {color:#232323}*/
+em {font-style:normal}
+.bd {font-weight:bold;}
+.c-red {color:#ec404a;}
+.fc-red2 {color:#ff1e00;}
+.c-yellow {color:#fee370}
+.line-bt {border-bottom:1px solid #36271a}
+
+/* 코레스코 회원카드 소지 의무화 안내 */
+.sec-evt {position:relative; display:block; box-sizing:border-box; width:100%; margin:0 auto; text-align:center; font-size: 13px;}
+.sec-evt .evt-box {position:relative; max-width:360px; margin:0 auto;}
+.sec-evt .evt-area1 {position:relative; padding:23px 0 75px; background: #f7f2f6 url(http://img.coresco.co.kr/m/landing/bg_landing_card.jpg) no-repeat top center; background-size: cover;}
+.sec-evt .evt-area1 img {max-width:295px;}
+.sec-evt .evt-area1 p, .sec-evt .evt-main em {font-size:13px; line-height: 1.5;}
+.sec-evt .evt-area1 p {margin-top:15px;}
+.sec-evt .evt-area1 .mt {margin-top:5px;}
+.sec-evt .evt-area2 {position:relative; width:100%; margin:0 auto; background:#ec4650}
+.sec-evt .evt-area2 .card-img {display:block; position:absolute; max-width:340px; top:-85px; right:0;}
+.sec-evt .evt-area2 .evt-btn-box {position:relative; padding:70px 15px 25px;}
+.sec-evt .evt-area2 .evt-btn-box .btn-arrow {display:inline-block; width:100%; height:50px; font-size:16px; line-height:50px; color:#fff; border-radius:3px; background:linear-gradient(#543c34, #47312b);}
+.sec-evt .evt-area2 .evt-btn-box .btn-arrow .ic-rArrow {display:inline-block; margin-left:9px}
+.sec-evt .evt-area2 .evt-btn-box .btn-arrow .ic-rArrow:after {border-color:#fff;}
+.sec-evt .evt-area3 {padding:16px 13px 12px; text-align:left; background:#ddd}
+.sec-evt .evt-area3 .mark-tit {font-size:14px; font-weight:bold; vertical-align:middle; color:#464646}
+.sec-evt .evt-area3 .mark-tit:before {content:''; display:inline-block; width:15px; height:20px; margin-right:4px; vertical-align:middle; background:url(http://img.coresco.co.kr/m/landing/icon_landing_card_check.png) no-repeat center 1px; background-size:15px auto}
+.sec-evt .evt-area3 .evt-list {}
+.sec-evt .evt-area3 .evt-list li {margin-top:6px; font-size:13px; line-height:15px; color:#5c5c5c}
+.sec-evt .evt-area3 .evt-list li .bd { color:#5c5c5c}
+.sec-evt .evt-area3 .i-s:before {font-size:13px;}
+
+/* 190110 코레스코 회원카드 제시 의무화 안내 */
+.evt-mdtr {background: #424348;}
+.evt-mdtr .evt-area1 {padding: 33px 23px 31px;/*padding: 9.5% 0 8.9%;*/ background: #e7e7e5 url(http://img.coresco.co.kr/m/landing/mdtr_190110/bg_landing_card.jpg) no-repeat top center; background-size: cover;}
+.evt-mdtr .evt-area1 img {max-width: 100%;}
+.evt-mdtr .evt-area1 .evt-txt-box {text-align: left;}
+.evt-mdtr .evt-area1 .evt-txt-box p {font-size: 15px; letter-spacing: -1px; color: #5f403e;}
+.evt-mdtr .evt-area1 .mt {margin-top: 10px;}
+.evt-mdtr .evt-area2 {box-sizing:border-box; padding: 20px 23px 22px; background: #424348;}
+.evt-mdtr .evt-area2 .card-img  {max-width: 183px; top: -70px; right: -23px;}
+.evt-mdtr .evt-area2 .evt-box p {font-size: 13px; line-height: 1.3; text-align: left; color: #e9e1b8;}
+.evt-mdtr .evt-area2 .evt-box .copy {display: block; margin-top: 11px; font-size: 10px; letter-spacing: 0; color: #797a7d;}
+.evt-mdtr .evt-area2 .evt-btn-box {padding: 0}
+.evt-mdtr .evt-area2 .evt-btn-box .btn-card {position: relative; display: block; margin-top: 8px;}
+.evt-mdtr .evt-area2 .evt-btn-box .btn-card img {position: relative; width: 100%;}
+
+
+/* 공통 */
+.evt-com {position:relative; display:block; box-sizing:border-box; width:100%; margin:0 auto; text-align:center; padding-bottom: 10px;}
+.evt-com .evt-sec {position:relative; display:block; box-sizing:border-box; width:100%; min-width: 320px; max-width:360px; margin:0 auto; text-align:center;}
+
+.evt-com .evt-sec .evt-area2 .evt-btn-box .btn-arrow {display: inline-block; background: #00368c; color: #fff; font-size: 15px; line-height: 50px; width: 90%; margin-top: 15px; border-radius: 2px;}
+.evt-com .evt-sec .evt-area2 .evt-btn-box .btn-arrow .ic-rArrow:after {border-color: #fff; margin-left: 10px;}
+
+/* 20180612_2018 성수기 시즌 즉시 확정 이벤트_다솜 */
+.evt-summer2018.step-1 {background:url(http://img.coresco.co.kr/m/landing/summer2018/bg_landing_summer.jpg) no-repeat; background-size:cover}
+.evt-summer2018.step-1 .evt-area1 {padding:40px 23px 0}
+.evt-summer2018.step-1 .evt-area1 .dis-ticket {width: 50%; margin:0 auto; margin-top:12px; text-align:center}
+.evt-summer2018.step-2 {background: #f0f0f0; padding: 15px 0;}
+.evt-summer2018.step-2 .evt-area1 h1.tit > img {width: 88%;}
+.evt-summer2018.step-2 .evt-area1 .list-prod > li {margin-top: 8px;}
+.evt-summer2018.step-2 .evt-area1 .list-prod > li > a > img {width: 95%;}
+.evt-summer2018.step-2 .evt-area1 .list-prod > li:first-child {margin-top: 12px;}
+
+/* 20180612_2018 성수기 시즌 즉시 확정 이벤트 수정_다솜 */
+.evt-summer2018-1 {padding-bottom:0}
+.evt-summer2018-1 .evt-sec {max-width:100%}
+.evt-summer2018-1.step-1 {}
+.evt-summer2018-1.step-1 .evt-area1 {padding:40px 13px 40px; background:url(http://img.coresco.co.kr/m/landing/summer2018/bg_landing_summer_top.jpg) no-repeat; background-size:cover}
+.evt-summer2018-1.step-1 .evt-area1 figure img {box-sizing:border-box; width:100%; padding:0 20px}
+.evt-summer2018-1.step-1 .evt-area2 {margin-top:-15%; /* margin-top:-50px; padding:55px 13px 30px; */ padding:15% 13px 30px;   background:url(http://img.coresco.co.kr/m/landing/summer2018/bg_landing_summer_bottom.png) no-repeat; background-size:cover}
+.evt-summer2018-1.step-1 .evt-area2 h1.tit {margin-bottom:0}
+.evt-summer2018-1.step-1 .evt-area2 h1.tit > img {box-sizing:border-box; width:100%; padding:0 22px;}
+.evt-summer2018-1.step-1 .evt-area2 .list-prod {}
+.evt-summer2018-1.step-1 .evt-area2 .list-prod > li {box-sizing:border-box; width:100%; padding:0; margin-top: 8px;}
+.evt-summer2018-1.step-1 .evt-area2 .list-prod > li > a {display:block}
+.evt-summer2018-1.step-1 .evt-area2 .list-prod > li > a > img {position:relative; width:100%}
+.evt-summer2018-1.step-1 .evt-area2 .list-prod > li:first-child {margin-top:15px;}
+
+/* 20180816 성수기 시즌 즉시확정 이벤트 변경 */
+.evt-season {padding-bottom:0; max-width: 768px;}
+.evt-season .evt-sec {max-width:100%}
+/*.evt-season .evt-area1 figure img {box-sizing:border-box; width:100%;}*/
+
+/* 회원사전예약 */
+.evt-season.advance .evt-area1 .evt-box {padding: 30px 0 20px; background:#3599ff; background:-webkit-linear-gradient(#3599ff, #7ccfff); background:linear-gradient(#3599ff, #7ccfff)}
+.evt-season .evt-area1 .ld-01 .btn-box {margin: 15px 4% 10px;}
+.evt-season .evt-area1 .ld-01 .btn-box .btn-move {display: block; border-color:#3372d8; background:#3372d8; line-height: 42px; font-size:16px; color: #fff; height: auto;}
+.evt-season .evt-area1 .ld-02 {padding: 0 4%;}
+
+.evt-season .evt-area2 {padding:15px 0 30px; background:#f1f1f1}
+.evt-season .evt-area2 .evt-box {position:relative; box-sizing:border-box; width: 80%; margin:0 auto}
+.evt-season .evt-area2 .form-area {box-sizing:border-box; padding-right:5px;}
+.evt-season .evt-area2 .form-box {position:relative; display:table; width:100%; margin-top:8px; text-align:left}
+.evt-season .evt-area2 .form-box div {position:relative}
+.evt-season .evt-area2 .form-box .label-com, .evt-season .evt-area2 .form-box .input-com {position:relative; display:table-cell; color:#3e3e3e;}
+.evt-season .evt-area2 .label-com {width:27%; padding-left:10px; font-size:12px; vertical-align:top; padding-top:9px;}
+.evt-season .evt-area2 .input-com {width:100%; padding:0 5px;}
+.evt-season .evt-area2 .line {display:inline-block; width:8px; height:1px; vertical-align:middle; margin:0 1px; background:#aaa}
+.evt-season .evt-area2 .c-point {position:absolute; display:inline-block; left:0; top:12px; vertical-align:middle; color:#ff0000}
+.evt-season .evt-area2 .phone-box .sel-area {float:left; width:33%;}
+.evt-season .evt-area2 .phone-box.sel-box-2 .sel-area {float:none; width:100%;}
+.evt-season .evt-area2 .phone-box .input-com {float:left; display:inline-block; width:57%;}
+.evt-season .evt-area2 .phone-box .line, .evt-season .evt-area2 .code-box .line {float:left; width:5%; margin:0 2%; margin-top:15px; } 
+.evt-season .evt-area2 .code-box {display:table-cell; width:auto;}
+.evt-season .evt-area2 .code-box .input-com {display:inline-block; float:left; width:auto}
+.evt-season .evt-area2 .code-box span {display:inline-block; float:left;}
+.evt-season .evt-area2 .code-box .fir {width:40%;}
+.evt-season .evt-area2 .code-box .last {width:33%;}
+.evt-season .evt-area2 .code-box .code-pwd {margin-left: 2%; line-height: 30px;}
+.evt-season .evt-area2 .code-box .code-pwd {font-size:12px; vertical-align:middle; color:#3e3e3e}
+.evt-season .evt-area2 .point-txt {position:relative; margin-top:15px; padding-left:10px; font-size:11px; text-align:left; vertical-align:middle; color:#3e3e3e}
+.evt-season .evt-area2 .point-txt .c-point {top:3px}
+
+.evt-season .evt-area2 .btn-box {margin-top:10px}
+.evt-season .evt-area2 .a-btn {position:relative; display:block; box-sizing:border-box; width:100%; height:35px; text-align:center; border-color:#009af8; background:#009af8}
+.evt-season .evt-area2 .a-btn span {display:block; font-size:11px; line-height:35px; color:#fff}
+
+/*
+
+
+.evt-season .btn-box {clear:both; padding:12px 6px 0;}*/
+
+
+
+
+@media (max-device-width: 320px) {
+    
+}
+

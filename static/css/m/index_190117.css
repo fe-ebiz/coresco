@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* font color */
+.fc-blue {color: #00ADEF;}
+.fc-black {color: #222;}
+
+/* 인사말 */
+.intro {
+	padding:15px;
+	background:url('http://img.coresco.co.kr/m/intro_bg.jpg') no-repeat 0 0;
+	background-size:100% 100%;
+}
+.intro .note {
+	padding:10px;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	font-size:14px;
+	box-shadow:1px 1px 1px rgba(213,213,213,.75);
+}
+.intro .note  strong {
+	display:block;
+	padding-bottom:5px;
+	border-bottom:1px solid #c7c7c7;
+	color:#515151;
+	text-align:center;
+}
+.intro .note  div {padding:5px;}
+
+/* 20180516_이용관리규정안내 */
+.intro .note .btn-consult {display:block; width:100%; height:33px; margin-bottom:15px; text-align:center; border-radius:3px; background:#314c74}
+.intro .note .btn-consult span {display:inline-block; position:relative; font-size:12px; line-height:33px; color:#fff}
+.intro .note .btn-consult span:after { content: ""; display: inline-block; position: relative; width:5px; height:5px; top: -2px; margin-left:8px; border: 1px solid #fff; border-top: 0; border-left: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+/* 지점소개 */
+.store {
+	padding:15px;
+	background-color:#56b7e4;
+}
+.store .tit {color:#fff;}
+.store .info {position:relative;}
+.store .info li {
+	clear:both;
+	display:table;
+	/*display:table;*/
+	position:relative;
+	width:100%;
+	margin-bottom:6px;
+	padding:6px 10px 6px 6px;
+	background-color:#fff;
+	box-sizing:border-box;
+}
+.store .info li:after {content:''; display:block; clear:both}
+.store .info li > div {display:table-cell; vertical-align:top;}
+.store .info li .info-img {
+	position:relative;
+	overflow:hidden;
+	box-sizing:border-box;
+	width:154px;
+	height:100%;
+}
+.store .info li .info-img img {/*position:relative;*/ width:100%;}
+.store .info li .info-img:before {
+	display:block;
+	position:absolute;
+	right:5px; top:3px;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	line-height:40px;
+}
+.store .info li .info-img.on:before {
+	content:'운영중';
+	background-color:#0f6ff1;
+}
+.store .info li .info-img.off:before {
+	content:'미운영';
+	background-color:#a3a3a3;
+}
+.store .info li .info-txt {
+	position:relative;
+	min-height:98px;
+	padding-left:10px;
+}
+.store .info li .info-txt .name {font-size:13px;}
+.store .info li .info-txt p {margin-top:5px; word-break:keep-all}
+.store .info li .info-txt .q-btn {
+	display:block;
+	position:static; 
+	/*position:absolute; 
+	right:0;
+	bottom:0;*/
+	margin-top:8px; 
+	height:28px;
+	background-color:#b0b0b0;
+	border-radius:4px;
+	text-align:center;
+	line-height:28px;
+}
+.store .info li .info-txt .go-link {background-color:#286cc8;}
+.store .info li .info-txt .q-btn span {
+	color:#fff;
+	font-weight:bold;
+}
+.store .info li .info-txt .go-link span {
+	position:relative;
+	padding-right:10px;
+}
+.store .info li .info-txt .go-link span:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:0; top:50%;
+	width:5px;
+	height:5px;
+	margin-top:-3px;
+	border:2px solid #fff;
+	border-left:0;
+	border-top:0;
+	background-color:transparent;
+	transform:rotate(-45deg);
+}
+
+/* 지점별 내용 */
+.sampo, .seorak, .ramada, .meriel {background-color:#fff;}
+.bs, .chiak, .namwon, .bareve {background-color:#efefef;}
+.contact {background-color:#d1dbe4;}
+
+.store-area {padding:15px;}
+.store-area .store-info {margin-top:5px;}
+.store-area .store-info > li {border-top:1px solid #dbdbdb;}
+.store-area .store-info > li:first-child {border-top:0;}
+.store-area .store-info > li dl {
+	display:table;
+	width:100%;
+	padding:5px 0;
+	table-layout:fixed;
+}
+.store-area .store-info > li dl dt,
+.store-area .store-info > li dl dd {
+	display:table-cell;
+	vertical-align:top;
+}
+.store-area .store-info > li dl dt {
+	position:relative;
+	width:57px;
+	padding-left:6px;
+	color:#3b99f1;
+}
+.store-area .store-info > li dl dt:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:6px;
+	width:2px;
+	height:2px;
+	background-color:#3b99f1;
+	border-radius:100%;
+}
+.store-area .store-info > li dl dd {word-break: break-all;}
+.store-area .slide-store > a {
+	display:block;
+	position:absolute;
+	top:50%;
+	z-index:100;
+	width:17px;
+	height:27px;
+	margin-top:-12px;
+	text-indent:-9999px;
+}
+.store-area .slide-store {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	/* Fix of Webkit flickering */
+	z-index: 1;
+}
+.store-area .slide-store .swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.store-area .slide-store .swiper-wrapper .swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.store-area .slide-store > a.btn-prev {
+	left:0;
+	background:url('http://img.coresco.co.kr/m/slide_btn_prev.png') no-repeat 0 0;
+	background-size:100% 100%;
+}
+.store-area .slide-store > a.btn-next {
+	right:0;
+	background:url('http://img.coresco.co.kr/m/slide_btn_next.png') no-repeat 0 0;
+	background-size:100% 100%;
+}
+
+/* 190117 오시는 길 */
+.way-box {/*padding: 15px;*/}
+/* 지도 버튼 리스트 */ 
+.way-box .w-t-inner2 {position: relative; box-sizing: border-box; width: 100%;}
+.way-box .w-t-inner2 .way-tit {float: left; position: relative; overflow: hidden; box-sizing: border-box; width: 25%; height: 25px; font-size: 12px; font-weight: 600; letter-spacing: -1.3px; line-height: 25px; text-align: center; word-break: keep-all; color: #4c4c4c; border: 1px solid #c8c8c8; border-left: 0; border-bottom: 0; background: #fff;}
+.way-box .w-t-inner2 .way-tit:first-of-type, .way-box .w-t-inner2 .way-tit:nth-of-type(5n) {border-left: 1px solid #c8c8c8;}
+/*.way-box .w-t-inner2 .way-tit:nth-of-type(n+5) {border-top: 0;}*/
+.way-box .w-t-inner2 .way-tit.on {color: #fff; background: #56b7e4;}
+/* 지도 리스트 */
+.way-box .w-m-inner {position: relative; box-sizing: border-box; width: 100%; height: 175px; border: 1px solid #c8c8c8;}
+.way-box .w-m-inner .way-map {/*display: none;*/ position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.way-box .w-m-inner .way-map .map {position: relative; width: 100%; height: 100%; padding-top: 0; border: 0;}
+/*.way-box .w-m-inner .way-map.on {display: block;}*/
+.way-box .w-m-inner .way-map.on .map {}
+/* 주소 */
+.way-box .w-a-inner {position: relative; box-sizing: border-box; width: 100%; margin-top: -1px; padding: 6px 10px; text-align: center; word-break: keep-all; border: 1px solid #c8c8c8; border-top-color: #e3e3e3; background: #fff;}
+.way-box .w-a-inner .way-adr {display: none; font-size: 12px; line-height: 16px; vertical-align: middle;}
+.way-box .w-a-inner .way-adr .adr-icon {display: inline-block; margin-right: 3px; padding: 0 5px; line-height: 20px; vertical-align: initial; border: 1px solid #00aeef;}
+.way-box .w-a-inner .way-adr.on {display: block;}
+.way-box .w-a-inner .way-adr.on .adr-icon {}
+
+/* 190117 오시는 길 적용 후 삭제 예정 */
+.map {
+	position:relative;
+	padding-top:25px;
+	border:1px solid #c8c8c8;
+}	
+.map h4 {
+	position:absolute;
+	top:0;
+	width:25%;
+	height:25px;
+	border-left:1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	background-color:#fff;
+	color:#4c4c4c;
+	text-align:center;
+	line-height:25px;
+box-sizing:border-box;
+}
+/* 4개일 경우 */
+.map-2 h4:first-of-type {border-left:0;}
+.map-2 h4:nth-of-type(2) {
+	left:25%;
+}
+.map-2 h4:nth-of-type(3) {
+	left: 50%;
+}
+.map-2 h4:nth-of-type(4) {
+	left: 75%;
+}
+/* 8개일 경우 */
+.map-3 h4 {word-break: keep-all;}
+.map-3 h4 span {display: inline;}
+.map-3 h4:first-of-type, .map-3 h4:nth-of-type(5) {border-left:0;}
+.map-3 h4:nth-of-type(2), .map-3 h4:nth-of-type(6) {left: 25%;}
+.map-3 h4:nth-of-type(3), .map-3 h4:nth-of-type(7) {left: 50%;}
+.map-3 h4:nth-of-type(4), .map-3 h4:nth-of-type(8) {left: 75%;}
+.map-3 h4:nth-of-type(n+5) {top: 26px;}
+/*.map-3 h4:nth-of-type(5), .map-3 h4:nth-of-type(6), .map-3 h4:nth-of-type(7), .map-3 h4:nth-of-type(8) {top: 26px;}*/
+
+.map h4.on {
+	border-left:0;
+	background-color:#56b7e4;
+	color:#fff;
+}
+.map .view {
+	display:none;
+	/* border-top:1px solid #c8c8c8; */
+}
+.map .view div {height:159px;}
+.map .view p {
+	padding:6px 10px;
+	border-top:1px solid #e3e3e3;
+	background-color:#fff;
+	text-align:center;
+}
+.map .view p em {
+	display:inline-block;
+	padding:2px 5px;
+	border:1px solid #00aeef;
+	color:#00aeef;
+	font-style:normal;
+	vertical-align:middle;
+}
+.map .view p span {
+	margin-left:2px;
+	vertical-align:middle;
+}
+/* 8개일 경우 */
+.map-3 .view {margin-top: 26px;}
+
+
+@media (max-device-width: 320px) {
+	.map-3 h4 span {display: none;}
+}

@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/* button */
+.a-btn {position:relative; display:inline-block; box-sizing:border-box; height:40px; padding:0 29px; text-align:center; border:1px solid #397edb; border-radius:3px; background:#397edb}
+.a-btn span {display:block; font-size:13px; line-height:40px; color:#fff}
+.btn-cancel {border:1px solid #adadad; background:#adadad}
+
+/* wrap */
+.msc-wrap {/*padding:43px 0 21px;*/ padding:15px 0 21px; background:#f5f5f5;}
+.msc-wrap * {font-family: "Nanum Gothic", sans-serif;}
+.msc-wrap .msc-container {position:relative; width:100%; box-sizing:border-box; margin:0 auto;}
+
+/* 카드발급 확장 tab */
+.msc-wrap .msc-top-area {position:relative; width:100%; box-sizing:border-box; padding:0 10px;}
+.msc-wrap .msc-top-area .msc-tab {display:table; box-sizing:border-box; width:100%; margin:0 auto; text-align:center; border:1px solid #c8c8c8;}
+.msc-wrap .msc-top-area .msc-tab li {display:table-cell; width:50%; height:39px;}
+.msc-wrap .msc-top-area .msc-tab li a {display:block; height:100%; font-size:13px; line-height:39px; color:#898989; background:#fff;}
+.msc-wrap .msc-top-area .msc-tab .tab-msc01 a {border-right:1px solid #dbdbdb;}
+.msc-wrap .msc-top-area .msc-tab .tab-msc02 a {border-left:1px solid #dbdbdb;}
+.msc-wrap .msc-top-area .msc-tab .on a {color:#fff; background:#397edb}
+.msc-wrap .msc-top-area .msc-tab .tab-msc01.on a {padding-right:1px; border-right:0;}
+.msc-wrap .msc-top-area .msc-tab .tab-msc02.on a {padding-left:1px; border-left:0;}
+
+/* 회원카드발급 */
+.msc-tab-area h3, .msc-tab-area p {color:#0f0f0f}
+.msc-tab-area {position:relative; box-sizing:border-box; margin:0 auto; padding:14px 10px 0;}
+.msc-tab-area .msc-tit {margin:0 0 2px 3px; font-size:17px; font-weight:bold; line-height:21px;}
+.msc-tab-area .msc-tit span {font-weight:normal}
+.msc-tab-area .msc-txt {margin-left:3px; padding-top:2px; font-size:13px; line-height:18px; word-break:keep-all;}
+.msc-tab-area .guide-area {position:relative; box-sizing:border-box; width:100%; margin:0 auto; margin-top:15px; border:1px solid #c8c8c8; background:#fff;}
+.msc-tab-area .guide-area .guide-box {padding:10px 0 15px 0}
+.msc-tab-area .guide-area .guide-tit {padding:0 19px 0 10px; font-size:13px; font-weight:bold;}
+.msc-tab-area .guide-area .guide-list {position:relative; margin:0 auto; padding:25px 5px 0 9px;}
+.msc-tab-area .guide-area .guide-list:before, .msc-tab-area .guide-area .guide-list:after {content:''; display:block; clear:both;}
+.msc-tab-area .guide-area .guide-list li {position:relative; float:left; box-sizing:border-box; width:25%; text-align:center}
+.msc-tab-area .guide-area .guide-list li:before {content:''; display:inline-block; position:absolute; width:5px; height:100%; left:0; margin-top:-5px; background:url(http://img.coresco.co.kr/card/img_guid_arrow.gif) no-repeat center center; background-size:5px auto;}
+.msc-tab-area .guide-area .guide-list li:first-of-type {padding-left:0px;}
+.msc-tab-area .guide-area .guide-list li:first-of-type:before {content:none;}
+.msc-tab-area .guide-area .guide-list li span {display:block; padding-top:43px; font-size:12px; font-weight:400; letter-spacing:-2px; word-break:keep-all; color:#000}
+.msc-tab-area .guide-area .guide-list .list01 {width:23%; padding-right:8px;}
+.msc-tab-area .guide-area .guide-list .list02 {width:26.1%; padding-left:13px;}
+.msc-tab-area .guide-area .guide-list .list03 {width:26.8%; padding-left:10px;}
+.msc-tab-area .guide-area .guide-list .list04 {width:24.1%}
+.msc-tab-area .guide-area .guide-list .list01 span {text-indent:-2px; background:url(http://img.coresco.co.kr/card/img_guid_list01.png) no-repeat center top; background-size:35px auto;}
+.msc-tab-area .guide-area .guide-list .list02 span {text-indent:-5px; background:url(http://img.coresco.co.kr/card/img_guid_list02.png) no-repeat center top; background-size:45px auto;}
+.msc-tab-area .guide-area .guide-list .list03 span {background:url(http://img.coresco.co.kr/card/img_guid_list03_1.png) no-repeat center top; background-size:53px auto;}
+.msc-tab-area.msc-family .guide-area .guide-list .list03 span {background:url(http://img.coresco.co.kr/card/img_guid_list03_2.png) no-repeat center top; background-size:53px auto;}
+.msc-tab-area .guide-area .guide-list .list04 span {text-indent:7px; background:url(http://img.coresco.co.kr/card/img_guid_list04.png) no-repeat center top; background-size:50px auto;}
+.msc-tab-area .guide-area .guide-info {clear:both; padding:9px 7px 8px; background:#f4f5fa;}
+.msc-tab-area .guide-area .guide-info p {font-size:12px; line-height:16px; color:#5c5c5c;}
+.msc-tab-area .guide-area .bg-seal {position:absolute; width:93px; height:76px; top:-32px; right:-10px; background:url(http://img.coresco.co.kr/m/card/img_duty.png) no-repeat center center; background-size:cover;}
+.msc-tab-area .btn-box {padding:20px 0 28px; text-align:center;}
+.msc-tab-area .btn-box .btn-apply {width:230px; height:44px; /*padding:0 72px;*/}
+.msc-tab-area .btn-box .btn-apply span {line-height:44px}
+
+.msc-tab-area .faq-sec {margin:0 -10px; padding:22px 0 0; border-top:1px solid #c8c8c8}
+.msc-tab-area .faq-area {position:relative; box-sizing:border-box; width:100%; padding:0 10px;}
+.msc-tab-area .faq-area .faq-tit-box {position:relative; box-sizing:border-box; /*width:90%;*/ width:316px; margin:0 auto; text-align:center; background:url(http://img.coresco.co.kr/card/bg_faq_tit.png) repeat-x 0 center; background-size:9px auto}
+.msc-tab-area .faq-area .faq-tit-box .msc-tit {display:inline-block; margin-left:0; /*width:76%;*/ padding:0 12px 0 10px; font-size:17px; line-height:20px; color:#01374f; background:#f5f5f5}
+.msc-tab-area .faq-area .faq-list {box-sizing:border-box; width:100%; margin:0 auto; padding-top:15px;}
+.msc-tab-area .faq-area .faq-list li {position: relative; border-bottom: 1px solid #ccc;}
+.msc-tab-area .faq-area .faq-list .f-q {cursor:pointer; position: relative; padding:11px 27px 10px 8px;}
+.msc-tab-area .faq-area .faq-list .f-q .q-con {display: inline-block; font-size:14px; font-weight:bold; color:#3f3f3f;}
+.msc-tab-area .faq-area .faq-list .f-q p {display: inline-block; padding-left:5px; font-size:13px; font-weight:normal; color:#474747;}
+.msc-tab-area .faq-area .faq-list .f-q .ic-bArrow {display: inline-block; position:absolute; right:11px; top:50%; margin-top:-5px}
+.msc-tab-area .faq-area .faq-list .f-q .ic-bArrow:after {border-color: #ccc; border-width: 2px; width:7px; height: 7px; top:-3px;}
+.msc-tab-area .faq-area .faq-list .f-a {padding:10px 22px 20px 8px; background:#fbfbfb;}
+.msc-tab-area .faq-area .faq-list .f-a p {padding-top:3px; font-size:13px; line-height:19px; word-break:keep-all; color:#474747;}
+.msc-tab-area .faq-area .faq-list .f-a p:first-of-type {padding-top:0}
+.msc-tab-area .faq-area .faq-list .on .f-q .q-con, .msc-tab-area .faq-area .faq-list .on .f-q p {font-weight:bold; color:#3a7edb}
+.msc-tab-area .faq-area .faq-list .on .f-a {border-top:1px solid #ccc;}
+.msc-tab-area .faq-area .faq-list .on .ic-bArrow:after {top:1px; border-color:#3a7edb; -webkit-transform: rotate(135deg); transform: rotate(135deg);}
+
+
+/* 팝업 */
+.pop_Bg_bk {display:none; z-index:10000; top:0; left:0; opacity: 0.6; filter: alpha(opacity=60);} /*z-index: 10000;*/
+.popup-card {display:none; position:absolute; box-sizing:border-box; width:100%; height:100%; top:0; left:0; padding:0 45px;}
+
+.popup-card .popup-wrap {z-index:100005; display:block; position: fixed; /* position:relative; */ box-sizing:border-box; width:100%; max-width:270px; top:50%; left: 50%; margin:0 auto; margin-left: -136px; margin-top:-208px; text-align:center; border:1px solid #c8c8c8; background:#f1f1f1}
+.popup-card.type-01 .popup-wrap {padding:12px 12px;}
+.popup-card.type-01 .popup-tit {padding-bottom:6px; font-size:13px; font-weight:normal; line-height:17px; letter-spacing:-1.3px; word-spacing:-2px; border-bottom:1px solid #cbcbcb;}
+.popup-card.type-01 .popup-tit em {font-weight:bold}
+.popup-card.type-02 .popup-wrap {padding:0; text-align:center;}
+.popup-card.type-02 .popup-top-box {padding:10px 0 10px; border-bottom:1px solid #cbcbcb; background:#fff;}
+.popup-card.type-02 .popup-top-box .popup-tit {font-size:14px; text-align:center;}
+
+.popup-card .popup-form:before, .popup-card .popup-form:after {content:''; clear:both; display:block}
+.popup-card .form-box {display:table; width:100%; margin-top:8px; text-align:left}
+.popup-card .form-box.type-1 {float:left; width:auto; margin-left:20px}
+.popup-card .form-box.type-1.fir {margin-left:0;}
+.popup-card .form-box.type-1 .label-com {width:40px}
+.popup-card .form-box.type-1.fir .label-com {width:47px}
+.popup-card .form-box.type-1 .sel-area {width:70px}
+.popup-card .form-box div {position:relative}
+.popup-card .form-box .label-com, .popup-card .form-box .input-com {display:table-cell; color:#3e3e3e;}
+.popup-card .form-box .label-com {width:47px; font-size:12px; vertical-align:top; padding-top:9px;}
+.popup-card .form-box .input-com {width:100%; padding:0 5px;}
+.popup-card .form-box .line {display:inline-block; width:8px; height:1px; vertical-align:middle; margin:0 1px; background:#aaa}
+.popup-card .phone-box .sel-area {float:left; width:28%;}
+.popup-card .phone-box .input-com {float:left; display:inline-block; width:63%;}
+.popup-card .phone-box .line {float:left; width:5%; margin:0 2%; margin-top:15px; } 
+.popup-card .email-box .input-com {display:inline-block; float:left}
+.popup-card .email-box .nth-1 {width:34%}
+.popup-card .email-box .nth-2 {width:56%}
+.popup-card .email-box span {float:left; width:10%; margin:0; text-align:center; line-height:32px}
+.popup-card .code-box {display:table-cell; width:auto;}
+.popup-card .code-box .input-com {display:inline-block; width:auto}
+.popup-card .code-box .fir {width:100px;}
+.popup-card .code-box .last {width:60px;}
+.popup-card .code-box .code-pwd {font-size:12px; vertical-align:middle; color:#3e3e3e}
+
+.popup-card .i-s {margin-top:13px; font-size:12px; line-height:15px; text-align:left; color:#494949}
+.popup-card .i-s + .i-s {margin-top:6px}
+.popup-card .a-btn {position:relative; display:block; box-sizing:border-box; width:100%; height:40px; text-align:center;}
+.popup-card .a-btn span {display:block; font-size:13px; line-height:40px; color:#fff}
+.popup-card .btn-box {clear:both; padding:12px 6px 0;}
+.popup-card .btn-box.type-02 {vertical-align:middle;}
+.popup-card .btn-box.type-02:before, .popup-card .btn-box.type-02:after {content:''; display:block; clear:both}
+.popup-card .btn-box.type-02 .a-btn {float:right; display:inline-block; width:48%; vertical-align:middle; border-radius:3px; }
+.popup-card .btn-box.type-02 a:first-child {float:left}
+.popup-card .btn-pop-close {display:block; position:absolute; width:15px; height:15px; top:8px; right:10px;}
+.popup-card .btn-pop-close:before, .popup-card .btn-pop-close:after {height:15px; top:0; left:7px; background:#bdbdbd;} 
+.popup-card.type-02 .btn-pop-close {top: 11px; right: 12px;}
+
+.popup-card .pop-check-area {padding:5px 6px 0;}
+.popup-card .pop-check-area .check-txt {font-size:13px; text-align:center; line-height:18px; letter-spacing:-1.3px; color:#303030;}
+
+.popup-end .popup-wrap {margin-top:-140px;}
+.popup-end .popup-container .consult-end-tit {margin-top:16px; font-size:15px;}
+.popup-end .popup-container .consult-end-tit em {font-weight:bold}
+.popup-end .popup-container .consult-end-txt {margin-top:10px; font-size:13px; line-height:18px; color:#494949}
+.popup-end .btn-pop-close {right:8px;}
+
+.popup-card .bd {font-weight:bold;}
+.popup-card .ad-txt {word-break:keep-all;}
+.popup-card .c-point {display:inline-block; width:7px; font-size:11px; vertical-align:middle; color:#ff0103}
+.popup-card .popup-txt {margin-top:15px; margin-left:6px; text-align:left; color:#797979}
+
+/*#popAddCard, #popFamilyCheck {position:absolute;}*/
+/*#popAddCard .popup-wrap, #popFamilyCheck .popup-wrap {top:50px;}*/
+/*#popApply, #popFamily {z-index:10001;}
+#popAddCard, #popAdress {z-index:10003;}
+#popCheck, #popFamilyCheck {z-index:10005;}
+#popAdress {display:block}*/
+
+/* 회원카드 재발급 신청 */
+.popup-apply {/*display:block;*/}
+.popup-apply .popup-top-box {padding:11px 0 11px; border-bottom:1px solid #cbcbcb; background:#fff;}
+.popup-apply .popup-top-box .popup-tit {font-size:13px; text-align:center;}
+.popup-apply .popup-container {position:relative; box-sizing:border-box; padding:6px 15px 14px 12px;}
+.popup-apply .popup-form .form-box .label-com {width:55px; font-size:12px; vertical-align:top; padding-top:8px;}
+.popup-apply .popup-form .line {display:inline-block; width:7px; height:1px; vertical-align:middle; background:#aaa}
+.popup-apply .popup-form .code-box, .popup-apply .form-box .phone-box, .popup-apply .form-box .address-box {display:table-cell; width:auto;}
+.popup-apply .code-box .fir {width:90px;}
+.popup-apply .code-box .last {width:52px;}
+.popup-apply .popup-form .phone-box .input-com {display:inline-block; width:118px}
+.popup-apply .popup-form .address-box {position:relative;}
+/*.popup-apply .popup-form .address-box .input-com {display:inline-block;}*/
+.popup-apply .popup-form .address-box .btn-adress {display:inline-block; position:absolute; box-sizing:border-box; width:45px; height:32px; top:0; right:0; font-size:11px; line-height:32px; text-align:center; vertical-align:middle; color:#314c74; border:1px solid #314c74; background:#fff;}
+.popup-apply .popup-form .address-box .fir {width:140px;}
+.popup-apply .popup-form .address-box .last {margin-top:5px;}
+.popup-apply .popup-form .i-s {margin-top:7px; font-size:12px; line-height:16px; color:#797979}
+.popup-apply .popup-form .i-s + .i-s {margin-top:3px;}
+.popup-apply .btn-box {padding:12px 0 0;}
+/* 회원카드 확장 신청//추가발급 */
+.popup-apply .pop-family-box {padding:9px 0 13px; border-top:1px solid #cbcbcb}
+.popup-apply .pop-family-box:first-child {padding-top:6px; border-top:0}
+.popup-apply .pop-family-box .pop-family-tit {font-size:13px; line-height:20px; font-weight:bold; color:#002e4a;}
+/*.popup-apply .pop-family-box + .btn-box {padding-top:10px}*/
+/* 구분 추가 */
+.popup-card	.popup-wrap {position: absolute; margin-top: auto; top: 50px;}
+.popup-apply .popup-form .form-box.division .label-com {}
+.popup-form .form-box.division {margin: 3px auto;}
+.popup-form .form-box.division input {display: inline-block; vertical-align: middle;}
+.popup-form .form-box.division input {width: 16px; height: 16px;
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	appearance: radio;
+}
+.popup-form .form-box.division label {position: relative; top: 1px;}
+.popup-form .form-box.division .s-1 {position: relative; top: 7px;}
+.popup-form .form-box.division .s-1 + .s-1 {display: inline-block; margin-left: 5px;}
+.popup-form .division-ul {}
+.popup-form .division-ul li {display: none;}
+.popup-form .division-ul li:first-child {display: block;}
+
+/* 우편번호찾기 */
+.popup-adress {padding:0 35px;}
+.popup-adress .popup-wrap {max-width:290px; min-height:255px; padding:0 12px; background:#fff}
+.popup-adress .popup-top-box {padding:15px 0 15px 8px;}
+.popup-adress .popup-top-box .popup-tit {font-size:14px; color:#000}
+.popup-adress .ad-tab-area {position:relative; width:100%;}
+.popup-adress .ad-tab-area .adress-tab {display:table; box-sizing:border-box; width:100%;}
+.popup-adress .ad-tab-area li {position:relative; display:table-cell; width:50%; border-bottom:1px solid #9b9ca0;}
+.popup-adress .ad-tab-area li a {display:block; height:26px; font-size:12px; line-height:26px; text-align:center; color:#5c5c5c; border:1px solid #dedede; border-bottom:0; background:#fafafa}
+.popup-adress .ad-tab-area .on {border-bottom:0;}
+.popup-adress .ad-tab-area .on a {color:#000; border:1px solid #9b9ca0; border-bottom:0; background:#fff}
+.popup-adress .ad-tab-area .tab-ad01 a {border-right:1px solid #9b9ca0;}
+.popup-adress .ad-tab-area .tab-ad01.on a {border-right:0;}
+.popup-adress .ad-tab-area .tab-ad02 a {border-left:1px solid #9b9ca0;}
+.popup-adress .ad-tab-area .tab-ad02.on a {border-left:0;}
+.popup-adress .ad-con-area {padding:10px 5px 12px 8px}
+.popup-adress .ad-con-area .p-txt {font-size:12px; line-height:20px; color:#232323; letter-spacing:-1.5px}
+.popup-adress .ad-con-area .p-txt span {display:block; line-height:15px;}
+.popup-adress .ad-con-area .form-box {margin-top:12px;}
+.popup-adress .ad-con-area .form-box .input-com {display:inline-block; width:203px;}
+.popup-adress .ad-con-area .form-box .btn-ad-serch {float: right; display:inline-block; width:40px; height:32px; padding:0; vertical-align: middle; border-radius:0; border:0; background:#009af8;}
+.popup-adress .ad-con-area .form-box .btn-ad-serch span {font-size:12px; line-height:32px;}
+.popup-adress .ad-search-area {padding-bottom:15px}
+.popup-adress .ad-search-area .search-txt {padding:0 0 7px 9px; font-size:12px; font-weight:bold;}
+.popup-adress .ad-search-area .search-txt span {}
+.popup-adress .ad-search-box {border:1px solid #c8c8c8; border-top:2px solid #9b9ca0;}
+.popup-adress .ad-search-box .search-tit {display:table; width:100%;}
+.popup-adress .ad-search-box .search-tit p {display:table-cell; width:190px; height:22px; padding:0 7px; font-size:12px; font-weight:normal; vertical-align:middle; text-align:center; color:#3e3e3e; border-bottom:1px solid #c8c8c8; border-left:1px solid #c8c8c8; background:#eee}
+.popup-adress .ad-search-box .search-tit p:first-of-type {width:auto; border-left:0; padding:0}
+.popup-adress .ad-search-box .ad-list-box {display:block; width:100%; max-height:148px; overflow-y:auto;}
+.popup-adress .ad-search-box .ad-list-box .ad-list {border-collapse:collapse;}
+.popup-adress .ad-search-box .ad-list-box .ad-list tr {}
+.popup-adress .ad-search-box .ad-list-box .ad-list td {padding:5px 7px 6px; font-size:11px; line-height:18px; word-break:keep-all; border-top:1px solid #c8c8c8;}
+.popup-adress .ad-search-box .ad-list-box .ad-list tr:first-of-type td {border-top:0}
+.popup-adress .ad-search-box .ad-list-box .ad-list .ad-fir {width:auto; vertical-align:top; text-align:center; border-right:1px solid #c8c8c8;}
+.popup-adress .ad-search-box .ad-list-box .ad-list .ad-txt-box {width:190px; vertical-align:middle; text-align:left}
+.popup-adress .ad-search-box .ad-list-box .ad-list .search-none {padding:15px 0; text-align:center;}
+
+/* 회원카드 배송지 확인 */
+.popup-card .pop-check-area {padding:5px 0 0;}
+.popup-card .pop-check-area em {font-style:normal;}
+.popup-card .pop-check-area .check-txt {font-size:12px; text-align:center; line-height:20px; letter-spacing:-1.3px; color:#303030;}
+.popup-card .pop-check-area .check-txt .deco-line {color:#002a6e; border-bottom:1px solid #002a6e;}
+.popup-card .pop-check-area .ad-check-box {box-sizing:border-box; margin:13px 7px 0; padding:2px 12px 11px 10px; border:1px solid #cbcbcb; border-top:2px solid #314c74; background:#fff;}
+.popup-card .pop-check-area .ad-check-box p {display:table; margin-top:3px;}
+.popup-card .pop-check-area .ad-check-box li p:first-of-type {margin-top:0}
+.popup-card .pop-check-area .ad-check-box p span {display:table-cell; font-size:12px; line-height:16px}
+.popup-card .pop-check-area .ad-check-box .bd {width:40px;}
+.popup-card .btn-box02 {clear:both; padding:12px 7px 2px; vertical-align:middle;}
+.popup-card .btn-box02:before, .popup-card .btn-box02:after {content:''; display:block; clear:both}
+.popup-card .btn-box02 .a-btn {float:right; display:inline-block; width:110px; height:40px; line-height:40px; font-weight:bold; vertical-align:middle; border-radius:2px}
+.popup-card .btn-box02 a:first-child {float:left}
+/* 회원카드 추가 발급 정보 확인 */
+.popup-card .family-check {padding-top:5px;}
+.popup-card .family-check .check-txt {padding-bottom:6px;}
+.popup-card .family-check-box {margin:7px 7px 0;}
+.popup-card .family-check-box .family-check-txt {padding:3px 0 5px; font-size:11px; text-align:center; color:#fff; border:1px solid #676f7b; background:#676f7b;}
+.popup-card .family-check-box .family-check-list {padding:1px 11px 9px; border:1px solid #d2d2d2; border-top:0; background:#fff;}
+.popup-card .family-check-box .family-check-list li {display:table; width:100%; padding-top:4px;}
+.popup-card .family-check-box .family-check-list span {display:table-cell; font-size:12px; color:#242424}
+.popup-card .family-check-box .family-check-list .bd {width:55px;}
+
+
+
+@media (max-device-width: 320px) {
+
+    /* 회원카드발급 */
+    .popup-apply .popup-container {padding:5px 12px 12px 10px;}
+    .popup-card .form-box {margin-top:5px;}
+    .popup-apply .popup-form .form-box .label-com {padding-top:7px;}
+    .popup-apply .popup-top-box {padding:8px 0;}
+    .popup-card .btn-pop-close {top:8px}
+    
+    .msc-tab-area .msc-txt {font-size:12px; line-height:16px;}
+    .msc-tab-area .guide-area .guide-list li span {padding-top:38px;}
+    .msc-tab-area .guide-area .guide-list .list01 span {background-size:32px auto;}
+    .msc-tab-area .guide-area .guide-list .list02 span {background-size:40px auto;}
+    .msc-tab-area .guide-area .guide-list .list03 span, .msc-tab-area.msc-family .guide-area .guide-list .list03 span {text-indent:5px; background-size:48px auto;}
+    .msc-tab-area .guide-area .guide-list .list04 span {background-size:46px auto;}
+    .msc-tab-area .guide-area .bg-seal {width:85px; height:69px; top:-30px; right:-12px;}
+
+    .msc-tab-area .faq-area .faq-tit-box {width:280px; background-size:8px auto}
+    .msc-tab-area .faq-area .faq-tit-box .msc-tit {padding:0 12px 0 8px; font-size:16px;}
+    .msc-tab-area .faq-area .faq-list .f-q p {padding-left:2px; font-size:12px; letter-spacing:-1.8px;}
+    .msc-tab-area .faq-area .faq-list .f-a p {font-size:12px; line-height:18px;}
+
+    /* 회원카드 재발급 신청 */
+    .popup-card {padding:0 35px;}
+    .popup-apply .popup-form .form-box .label-com {width:49px;}
+    .popup-apply .popup-form .code-box .fir {width:81px;}
+    .popup-apply .popup-form .code-box .last {width:50px;}
+    .popup-apply .popup-form .phone-box .input-com {width:111px;}
+    .popup-apply .popup-form .address-box .fir {width:126px;}
+    .popup-apply .popup-form .address-box .btn-adress {height:30px; line-height:30px;}
+    .popup-apply .popup-form .i-s {margin-top:5px; font-size:11px; line-height:14px;}
+    .popup-apply .btn-box {padding:8px 0 0;}
+    /* 회원카드 확장 신청//추가발급 */
+    .popup-apply .pop-family-box {padding:5px 0 9px;}
+    .popup-apply .pop-family-box:first-child {padding-top:0;}
+    .popup-apply .pop-family-box .pop-family-tit {font-size:12px; line-height:18px;}
+    .popup-apply .pop-family-box + .btn-box {padding-top:3px}
+
+    /* 우편번호찾기 */
+    .popup-adress .popup-top-box {padding: 10px 0 10px 8px;}
+    .popup-adress .ad-con-area {padding: 5px 5px 9px 8px;}
+    .popup-adress .ad-con-area .form-box {margin-top:6px;}
+    .popup-adress .ad-con-area .form-box .input-com {width:170px;}
+    .popup-adress .ad-con-area .form-box .btn-ad-serch {width:36px; height:30px}
+    .popup-adress .ad-con-area .form-box .btn-ad-serch span {font-size:11px; line-height:30px}
+    .popup-adress .ad-search-box .search-tit p, .popup-adress .ad-search-box .ad-list-box .ad-list .ad-txt-box {width:160px;}
+
+    
+}
