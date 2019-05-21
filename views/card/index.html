@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="http://static.onbiz.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css">
     <link rel="stylesheet" href="http://static.coresco.co.kr/css/notosanskr.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://static.coresco.co.kr/css/jquery.bxslider.css" />
     <link rel="stylesheet" href="http://static.coresco.co.kr/css/override.css">
-    <link rel="stylesheet" href="http://static.coresco.co.kr/css/common.css">
-    <link rel="stylesheet" href="http://static.coresco.co.kr/css/card/init.css">
-   <!-- <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/card/init.css">-->
+    <!-- <link rel="stylesheet" href="http://static.coresco.co.kr/css/common.css">
+    <link rel="stylesheet" href="http://static.coresco.co.kr/css/card/init.css"> -->
+   <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/card/init.css">
 
     <script type="text/javascript" src="http://static.coresco.co.kr/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://static.coresco.co.kr/js/jquery.bxslider.min.js"></script>
@@ -109,7 +109,7 @@
                 </div>
                 
 		        <!-- apply 회원카드 재발급 -->
-                <section id="msctab-1" class="msc-tab-area msc-apply" style="display:block">
+                <section id="msctab-1" class="msc-tab-area msc-apply">
                     <h3 class="msc-tit">회원카드 재발급</h3>
                     <p class="msc-txt">지점 및 체인콘도 이용 시에는 “회원카드”를 소지 및 제시하여야 지만, 회원혜택을 모두 누리 실수 있습니다.</p>
                     
@@ -356,10 +356,10 @@
             </div>
 
             <!-- 팝업 : 회원카드 재발급 STEP1 -->
-            <div id="popApply" class="popup-card popup-apply">
+            <div id="popApply" class="popup-card popup-apply" style="display: none">
                 <div class="popup-wrap">
                     <div class="popup-top-box">
-                        <h4 class="popup-tit">회원카드 재발급신청</h4>
+                        <h4 class="popup-tit">회원카드<span class="c-red">(제휴사)</span> 재발급신청</h4>
                     </div>
                     <div class="popup-container">
                         <div class="popup-form">
@@ -371,40 +371,67 @@
                                 <span class="label-com"><label for="memberNum">회원번호</label></span>
                                 <input type="tel" id="memberNum" class="input-com" placeholder="예: 12345678">
                             </div>
+                            <div class="form-box division division_1">
+								<span class="label-com">구분</span>
+								<span class="s-1">
+									<input name="division" type="radio" id="pers" value="pers" checked="">
+									<label for="pers">개인</label>
+								</span>
+								<span class="s-1">
+									<input name="division" type="radio" id="corp" value="corp">
+									<label for="corp">법인</label>
+								</span>
+                            </div>
+                            <ul class="division-ul division-ul1">
+								<li>
+									<div class="form-box">
+										<span class="label-com"><label for="ssn1"><b style="color:#e67300">*</b>생년월일</label></span>
+										<div class="code-box">
+											<input type="number" id="ssn1" class="input-com fir" placeholder="주민번호 앞자리" name="ssn1" oninput="maxLengthCheck(this);checktype('ssn1');" onkeyup="checknum('ssn1', 'ssn2','5')" maxlength="6" title="주민번호 앞자리를 입력해주세요.">
+											<span class="line"></span>
+											<input type="number" class="input-com last" placeholder="뒤 3자리" id="ssn2" name="ssn2" oninput="maxLengthCheck(this);checktype('ssn2');" maxlength="3" title="주민번호 뒷자리를 입력해주세요.">
+											<span class="code-pwd">****</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form-box">
+										<span class="label-com"><label for="corpNum" style="font-size:16px;"><b style="color:#e67300">*</b>사업자번호</label></span>
+										<input type="number" id="corpNum" name="corpNum" class="input-com" title="사업자번호를 입력해주세요." oninput="maxLengthCheck(this);checktype('corpNum');" onkeypress="if(event.keyCode=='189' || event.keyCode=='45' || event.keyCode=='47' || event.keyCode=='42'){return;	event.returnValue=false;}" maxlength="10">
+									</div>
+								</li>
+                            </ul>
+                            <script>
+								$(".division_1 span").click(function() {
+									var idx = $(this).index() - 1;
+									$(".division-ul1 li").eq(idx).show().siblings().hide();
+								});
+							</script>
                             <div class="form-box">
-                                <span class="label-com"><label for="memberCode">주민번호</label></span>
-                                <div class="code-box">
-                                    <input type="tel" id="memberCode" class="input-com fir" placeholder="주민번호 앞자리">
-                                    <span class="line"></span>
-                                    <input type="tel" class="input-com last" placeholder="뒤 3자리">
-                                    <span class="code-pwd">****</span>
-                                </div>
+								<span class="label-com"><label for="mobile1"><b style="color:#e67300">*</b>연락처</label></span>
+								<div class="phone-box">
+									<div class="sel-area">
+										<select name="mobile1" id="mobile1" class="sel-com">
+											<option value="010">010</option>
+											<option value="010">011</option>
+										</select>
+									   <!-- ie8에서 정렬을 위한 sel-txt // select값을 옮기는 용도 -->
+										<span class="sel-txt"></span>
+								   </div>
+									<span class="line"></span>
+									<input type="number" name="mobile2" id="mobile2" class="input-com" oninput="maxLengthCheck(this);checktype('mobile2');" maxlength="8" placeholder="'-'를 제외하고 입력" title="연락처를 입력해주세요.">
+								</div>
                             </div>
                             <div class="form-box">
-                                <span class="label-com"><label>연락처</label></span>
-                                <!-- 180516_태그 수정 -->
-                                <div class="phone-box">
-                                    <div class="sel-area">
-                                        <select class="sel-com">
-                                            <option>010</option>
-                                            <option>011</option>
-                                        </select>
-                                       <!-- ie8에서 정렬을 위한 sel-txt // select값을 옮기는 용도 -->
-                                        <span class="sel-txt"></span>
-                                   </div>
-                                    <span class="line"></span>
-                                    <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
-                                </div>
-                            </div>
-                            <div class="form-box">
-                                <span class="label-com"><label>배송지</label></span>
-                                <div class="address-box">
-                                   <!-- disabled 일 경우 ie8에서의 호환을 위해 disabled 클래스 추가 -->
-                                    <input type="text" class="input-com disabled fir" disabled>
-                                    <a href="javascript:;" class="btn-adress">주소찾기</a>
-                                    <input type="text" class="input-com disabled last" disabled>
-                                </div>
-                            </div>
+								<span class="label-com"><label for="pcode">배송지</label></span>
+								<div class="address-box">
+								   <!-- disabled 일 경우 ie8에서의 호환을 위해 disabled 클래스 추가 -->
+									<input type="text" class="input-com disabled fir" name="pcode" id="pcode" onclick="ebizPost.search_popup();" placeholder="우편번호" readonly="">
+									<a href="javascript:ebizPost.search_popup();" id="addr_btn" class="btn-adress">주소찾기</a>
+									<input type="text" name="addr_road" id="addr_road" class="input-com disabled last" onclick="ebizPost.search_popup();" placeholder="주소를 입력하세요" readonly="">
+									<input type="text" name="addr_sub" id="addr_sub" class="input-com disabled last" style="background: #ffffff;" placeholder="상세주소를 입력하세요">
+								</div>
+							</div>
                             <p class="c-mark">※ 회원번호를 모르시는 경우 빈 공란으로 표기해 두십시요.</p>
                             <p class="c-mark">
                                 ※ 배송지 주소는 회원카드 재발급시 배송될 주소지 입니다.<br>
@@ -498,12 +525,12 @@
             </div>
 
             <!-- 팝업(공통) STEP2 : 회원카드 배송지 확인 -->
-            <div id="popCheck" class="popup-card popup-apply">
+            <div id="popCheck" class="popup-card popup-apply" style="display: block">
                 <div class="popup-wrap">
                     <div class="popup-top-box">
                         <h4 class="popup-tit">회원카드 배송지 확인</h4>
                     </div>
-                    <div class="popup-container">
+                    <div class="popup-container pd-01">
                         <div class="pop-check-area">
                             <p class="check-txt">
                                 <em class="bd">김지영</em> 회원님. 정확한 회원카드 배송을 위해<br>
@@ -520,6 +547,59 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="popup-container-f pop-sign-area">
+                        <div class="area area-01">
+                            <strong class="c-blue">홍길동 회원님은 코레스코 제휴사 회원이십니다.</strong>
+                            <p class="row-txt">
+                                코레스코 제휴사카드 재발급에 필요한<br>
+                                약관 동의 및 서명을 진행해주세요.
+                            </p>
+                            <div id="signature-pad" class="m-signature-pad">
+                                <div class="bg"><span class="cell">이 곳에 서명해주세요.</span></div>
+                                <div class="m-signature-pad--body">
+                                    <canvas></canvas>
+                                </div>
+                                <div class="m-signature-pad--footer">
+                                    <div class="left">
+                                        <button type="button" class="button clear" data-action="clear">다시 쓰기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="../../static/js/libs/signature_pad.js"></script>
+                            <script>
+                                var wrapper = document.getElementById("signature-pad"),
+                                    clearButton = wrapper.querySelector("[data-action=clear]"),
+                                    canvas = wrapper.querySelector("canvas"),
+                                    signaturePad;
+                                function resizeCanvas() {
+                                    var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+                                    canvas.width = canvas.offsetWidth * ratio;
+                                    canvas.height = canvas.offsetHeight * ratio;
+                                    canvas.getContext("2d").scale(ratio, ratio);
+                                }
+                                // window.onresize = resizeCanvas;
+                                resizeCanvas();
+                                signaturePad = new SignaturePad(canvas);
+                                clearButton.addEventListener("click", function (event) {
+                                    signaturePad.clear();
+                                });
+
+                                $('.m-signature-pad--body').on('click', function() {
+                                    console.log('hi');
+                                });
+                            </script>
+                        </div>
+                        <div class="area area-02">
+                            <label><input type="checkbox"> 코레스코 제휴사카드 이용약관에 동의합니다.(필수)</label>
+                            <div class="terms-box">
+                                <div class="inner">
+                                    가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-container pd-01">
                         <div class="btn-box btn-box02">
                             <a href="javascript:;" class="a-btn btn-cancel"><span>수정</span></a>
                             <a href="javascript:;" class="a-btn"><span>확인</span></a>
@@ -530,7 +610,7 @@
             </div>
 
             <!-- 팝업 : 회원카드 확장 STEP3 / 추가발급 -->
-            <div id="popAddCard" class="popup-card popup-apply" style="display:block">
+            <div id="popAddCard" class="popup-card popup-apply" style="display: none">
                 <div class="popup-wrap">
                     <div class="popup-top-box">
                         <h4 class="popup-tit">회원카드 확장 신청</h4>

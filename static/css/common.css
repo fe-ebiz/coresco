@@ -8,6 +8,7 @@
 html, body {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px; color: #3a3434;}
 button {cursor: pointer; border: none; background: none;}
 a {text-decoration:none; color: #434343;}
+input {margin-left: 0;}
 input:-ms-input-placeholder {color:#cdcdcd !important;}
 input::placeholder {color:#cdcdcd;}
 input[type="number"]::-webkit-outer-spin-button,

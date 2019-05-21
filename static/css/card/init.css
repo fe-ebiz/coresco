@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('../include/sign_pad.css');
+
 /* text */
 .c-mark {padding-left:20px; text-indent:-20px;}
 
@@ -104,8 +106,19 @@
 
 .popup-card .pop-check-area {padding:5px 6px 0;}
 .popup-card .pop-check-area .check-txt {font-size:20px; text-align:center; line-height:28px; letter-spacing:-1.3px; color:#303030;}
-.popup-card .a-btn {display:block; width:100%; padding:0; height:62px; line-height:62px}
 
+.popup-card .pop-sign-area {font-size: 15px;}
+.popup-card .pop-sign-area .area {padding-left: 35px; padding-right: 35px;}
+.popup-card .pop-sign-area .area-01 {padding-top: 30px; padding-bottom: 50px; background: #fff; text-align: center; line-height: 1.5;}
+.popup-card .pop-sign-area .area-01 strong {font-size: 20px; font-weight: 700;}
+.popup-card .pop-sign-area .area-01 .row-txt {margin-top: 5px;}
+.popup-card .pop-sign-area .area-02 {padding-top: 20px;}
+.popup-card .pop-sign-area .area-02 label {font-weight: 700;}
+.popup-card .pop-sign-area .area-02 label input[type='checkbox'] {position: relative; width: 16px; height: 16px; top: -1px;}
+.popup-card .pop-sign-area .area-02 .terms-box {margin-top: 5px; height: 50px; overflow-y: scroll; padding: 5px; background: #fff; border: 1px solid #b1b1b1; line-height: 1.2;}
+.popup-card .pop-sign-area .area-02 .terms-box .inner {font-size: 13px;}
+
+.popup-card .a-btn {display:block; width:100%; padding:0; height:62px; line-height:62px}
 .popup-card .btn-box {clear:both;}
 .popup-card .btn-box.btn-box02 {vertical-align:middle;}
 .popup-card .btn-box.btn-box02:before, .popup-card .btn-box.btn-box02:after {content:''; display:block; clear:both}
@@ -119,6 +132,8 @@
 .popup-card.type-02 .btn-pop-close {top: 15px; right: 12px;}
 .popup-card .btn-pop-close-2 {display:block; position:absolute; height:22px; top:23px; right:23px; background:url(http://img.coresco.co.kr/close.png); background-repeat:no-repeat; background-size:20px auto; background-position:0 center}
 .popup-card .btn-pop-close-2 span {display:inline-block; padding-left:27px; font-size:20px; line-height:22px; color:#fff}
+
+#popCheck.popup-card .btn-box.btn-box02 {padding-top: 0; padding-bottom: 20px;}
 
 .popup-card .bd {font-weight:bold;}
 .popup-card .ad-txt {word-break:keep-all;}
@@ -137,7 +152,9 @@
 .popup-apply {width:477px; margin-left:-238px; background:#f1f1f1}
 .popup-apply .popup-top-box {padding:19px 0 20px; border-bottom:1px solid #cbcbcb; background:#fff;}
 .popup-apply .popup-top-box .popup-tit {font-size:20px; text-align:center;}
-.popup-apply .popup-container {position:relative; box-sizing:border-box; padding:10px 30px 18px 25px;}
+.popup-apply .popup-container {position:relative; box-sizing:border-box; padding:10px 35px 18px;}
+.popup-apply .popup-container.pd-01 {padding: 0 35px;}
+.popup-apply .popup-container-f {padding: 15px 0;}
 .popup-apply .popup-form .form-box .label-com {width:86px; font-size:18px; vertical-align:top; padding-top:15px;}
 .popup-apply .popup-form .code-box, .popup-apply .form-box .phone-box, .popup-apply .form-box .address-box {display:table-cell; width:auto;}
 .popup-apply .popup-form .sel-area {width:96px; height:52px;}
@@ -153,7 +170,7 @@
 /*.popup-apply .popup-form .c-mark:first-of-type {margin-top:18px;}*/
 .popup-apply .popup-form .c-mark + .c-mark {margin-top:6px;}
 .popup-apply .btn-box {padding:22px 0 0 0;}
-.popup-apply .btn-box.btn-box02 {padding:22px 6px 0 12px;}
+.popup-apply .btn-box.btn-box02 {padding:22px 0px 0 0px;}
 .popup-apply .btn-pop-close {top:15px; right:12px;}
 /* 회원카드 확장 신청//추가발급 */
 .popup-apply .pop-family-box {padding:17px 0 23px; border-top:1px solid #cbcbcb}
@@ -209,10 +226,10 @@
 .popup-adress .btn-pop-close {top:17px; right:0px;}
 
 /* 회원카드 배송지 확인 */
-.popup-card .pop-check-area {padding:17px 6px 0;}
+.popup-card .pop-check-area {padding:17px 0px 0;}
 .popup-card .pop-check-area .check-txt {line-height:34px;}
 .popup-card .pop-check-area .check-txt .deco-line {color:#002a6e; border-bottom:1px solid #002a6e;}
-.popup-card .pop-check-area .ad-check-box {box-sizing:border-box; margin-top:32px; margin-left:7px; padding:3px 19px 20px 21px; border:1px solid #cbcbcb; border-top:2px solid #314c74; background:#fff;}
+.popup-card .pop-check-area .ad-check-box {box-sizing:border-box; margin-top:32px; padding:3px 19px 20px 21px; border:1px solid #cbcbcb; border-top:2px solid #314c74; background:#fff;}
 .popup-card .pop-check-area .ad-check-box p {display:table; margin-top:6px;}
 .popup-card .pop-check-area .ad-check-box li p:first-of-type {margin-top:0}
 .popup-card .pop-check-area .ad-check-box p span {display:table-cell; font-size:19px; line-height:26px}
