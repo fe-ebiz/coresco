@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* css 초기화 */
-@import url(http://static.coresco.co.kr/css/reset.css);
-@import url(http://static.onbiz.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('http://static.coresco.co.kr/css/reset.css');
+@import url('http://static.onbiz.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 html, body {margin:0; padding:0; font-family: 'Noto Sans KR', 'Nanum Gothic', 'Malgun Gothic', Arial, sans-serif; box-sizing: border-box; letter-spacing: -1px; color: #3a3434;}
 button {cursor: pointer; border: none; background: none;}
 a {text-decoration:none; color: #434343;}
@@ -58,6 +58,7 @@ select::-ms-expand {display:none;}
 
 /* 색상 */
 .c-blue {color: #00AEEF;}
+/* .white {color:#fff !important;} */
 .c-red {color:#ff0000}
 .c-skyblue {color:#0093f1;}
 .c-gray {color:#898989}

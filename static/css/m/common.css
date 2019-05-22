@@ -41,10 +41,12 @@ select::-ms-expand {display:none;}
     transform: rotate(45deg);   
 }
 /* color */
+.c-blue {color: #00AEEF;}
 .white {color:#fff !important;}
 .c-skyblue {color:#0093f1;}
 .c-gray {color:#898989}
 .c-red {color:#ff0000}
+.c-orange {color:#fa6c0a}
 
 /* font style */
 .f-bd {font-weight:600}

@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import url('../include/sign_pad.css');
+@import url('//static.coresco.co.kr/css/include/sign_pad.css');
+/* @import url('../include/sign_pad.css'); */
 
 /* text */
 .c-mark {padding-left:20px; text-indent:-20px;}
@@ -23,12 +24,12 @@
 
 /* 회원카드발급 */
 .msc-tab-area h3, .msc-tab-area p {color:#0f0f0f}
-.msc-tab-area {position:relative; box-sizing:border-box; margin:0 auto; padding:57px 2px 0;}
+.msc-tab-area {position:relative; box-sizing:border-box; margin:0 auto; padding:57px 0px 0;}
 .msc-tab-area .msc-tit {margin-bottom:11px; font-size:28px; font-weight:bold; line-height:36px;}
 .msc-tab-area .msc-tit span {font-weight:normal}
 .msc-tab-area .msc-txt {font-size:18px; line-height:32px;}
 .msc-tab-area.msc-apply .msc-txt {min-height:43px;}
-.msc-tab-area .guide-area {position:relative; width:989px; box-sizing:border-box; margin:0 auto; margin-top:22px; border:1px solid #c8c8c8; background:#fff;}
+.msc-tab-area .guide-area {position:relative; width: 100%; box-sizing:border-box; margin:0 auto; margin-top:22px; border:1px solid #c8c8c8; background:#fff;}
 .msc-tab-area .guide-area .guide-box {padding:19px 29px 27px}
 .msc-tab-area .guide-area .guide-tit {font-size:18px; font-weight:bold;}
 .msc-tab-area .guide-area .guide-list {position:relative; margin:0 auto; padding-top:49px}
@@ -52,7 +53,7 @@
 .msc-tab-area .btn-box {padding:43px 0 46px; text-align:center;}
 .msc-tab-area .btn-box .btn-apply {width:234px; height:60px; padding:18px 0;}
 
-.msc-tab-area .faq-area {padding:60px 0 0; border-top:1px solid #c8c8c8}
+.msc-tab-area .faq-area {padding:60px 0 0;}
 .msc-tab-area .faq-area .faq-tit-box {width:800px; margin:0 auto; text-align:center; background:url(http://img.coresco.co.kr/card/bg_faq_tit.png) repeat-x 0 13px}
 .msc-tab-area .faq-area .faq-tit-box .msc-tit {display:inline-block; width:400px; padding:0 8px 0 8px; background:#f5f5f5}
 .msc-tab-area .faq-area .faq-list {width:865px; margin:0 auto; padding-top:60px;}
@@ -66,6 +67,19 @@
 .msc-tab-area .faq-area .faq-list .f-a p {font-size:18px; line-height:29px; color:#474747;}
 .msc-tab-area .faq-area .faq-list .on .f-q .q-con, .msc-tab-area .faq-area .faq-list .on .f-q p {font-weight:bold; color:#314c74}
 .msc-tab-area .faq-area .faq-list .on .ic-bArrow:after {top:6px; border-color:#314c74; -webkit-transform: rotate(135deg); transform: rotate(135deg);}
+
+.msc-tab-area .card-area {padding:30px 0 0;}
+.msc-tab-area .card-area .card-tit-box {width:800px; margin:0 auto; text-align:center; background:url(http://img.coresco.co.kr/card/bg_faq_tit.png) repeat-x 0 13px}
+.msc-tab-area .card-area .card-tit-box .msc-tit {display:inline-block; width:400px; padding:0 8px 0 8px; background:#f5f5f5}
+.msc-tab-area .card-area .card-list {margin-top: 20px;}
+.msc-tab-area .card-area .card-list .item {display: table; width: 100%; height: 215px; box-sizing: border-box; border: 1px solid  #c8c8c8;}
+.msc-tab-area .card-area .card-list .item > * {display: table-cell; box-sizing: border-box; vertical-align: middle; font-size: 22px;}
+.msc-tab-area .card-area .card-list .item:first-child {border-bottom: none;}
+.msc-tab-area .card-area .card-list .item .tit-box {width: 280px; height: 100%; background: #e9ebf5;}
+.msc-tab-area .card-area .card-list .item .tit-box .title {text-align: center; font-weight: 700; line-height: 1.3;}
+.msc-tab-area .card-area .card-list .item .tit-box .title .c-blue {display: block;}
+.msc-tab-area .card-area .card-list .item .img-box {padding-left: 50px;}
+.msc-tab-area .card-area .card-list .item .img-box img {}
 
 /* 회원카드발급 팝업 */
 .pop_Bg_bk {display:none; z-index:9998; top:0; left:0; opacity: 0.6; filter: alpha(opacity=60);} /*z-index: 10000;*/
@@ -107,16 +121,16 @@
 .popup-card .pop-check-area {padding:5px 6px 0;}
 .popup-card .pop-check-area .check-txt {font-size:20px; text-align:center; line-height:28px; letter-spacing:-1.3px; color:#303030;}
 
-.popup-card .pop-sign-area {font-size: 15px;}
+.popup-card .pop-sign-area {margin: 15px auto; font-size: 15px;}
 .popup-card .pop-sign-area .area {padding-left: 35px; padding-right: 35px;}
-.popup-card .pop-sign-area .area-01 {padding-top: 30px; padding-bottom: 50px; background: #fff; text-align: center; line-height: 1.5;}
+.popup-card .pop-sign-area .area-01 {padding-top: 30px; padding-bottom: 30px; background: #fff; text-align: center; line-height: 1.5;}
 .popup-card .pop-sign-area .area-01 strong {font-size: 20px; font-weight: 700;}
 .popup-card .pop-sign-area .area-01 .row-txt {margin-top: 5px;}
 .popup-card .pop-sign-area .area-02 {padding-top: 20px;}
 .popup-card .pop-sign-area .area-02 label {font-weight: 700;}
 .popup-card .pop-sign-area .area-02 label input[type='checkbox'] {position: relative; width: 16px; height: 16px; top: -1px;}
-.popup-card .pop-sign-area .area-02 .terms-box {margin-top: 5px; height: 50px; overflow-y: scroll; padding: 5px; background: #fff; border: 1px solid #b1b1b1; line-height: 1.2;}
-.popup-card .pop-sign-area .area-02 .terms-box .inner {font-size: 13px;}
+.popup-card .pop-sign-area .area-02 .terms-box {margin-top: 5px; height: 50px; overflow-y: scroll; padding: 5px; background: #fff; border: 1px solid #b1b1b1; line-height: 1.3;}
+.popup-card .pop-sign-area .area-02 .terms-box .inner {font-size: 13px; text-align: left;}
 
 .popup-card .a-btn {display:block; width:100%; padding:0; height:62px; line-height:62px}
 .popup-card .btn-box {clear:both;}
@@ -141,7 +155,7 @@
 
 #popApply, #popFamily, #popAddCard {top:53px} 
 #popAdress, #popFamilyCheck {top:113px} 
-#popCheck {top:140px} 
+#popCheck {top: 70px} 
 /*#popApply, #popFamily {z-index:10001; top:53px}
 #popAddCard {z-index:10003; top:53px}
 #popAdress {z-index:10003; top:113px}
@@ -154,12 +168,12 @@
 .popup-apply .popup-top-box .popup-tit {font-size:20px; text-align:center;}
 .popup-apply .popup-container {position:relative; box-sizing:border-box; padding:10px 35px 18px;}
 .popup-apply .popup-container.pd-01 {padding: 0 35px;}
-.popup-apply .popup-container-f {padding: 15px 0;}
+.popup-apply .popup-container-f {padding: 0;}
 .popup-apply .popup-form .form-box .label-com {width:86px; font-size:18px; vertical-align:top; padding-top:15px;}
 .popup-apply .popup-form .code-box, .popup-apply .form-box .phone-box, .popup-apply .form-box .address-box {display:table-cell; width:auto;}
 .popup-apply .popup-form .sel-area {width:96px; height:52px;}
 .popup-apply .popup-form .phone-box .sel-com {line-height:52px;}
-.popup-apply .popup-form .phone-box .input-com {display:inline-block; width:210px;}
+.popup-apply .popup-form .phone-box .input-com {display:inline-block; width:198px;}
 .popup-apply .popup-form .phone-box .line {margin:0 3px;}
 .popup-apply .popup-form .address-box {position:relative;}
 .popup-apply .popup-form .address-box .input-com {display:inline-block; /*cursor:pointer*/}

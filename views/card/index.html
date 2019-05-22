@@ -135,8 +135,36 @@
                     <div class="btn-box">
                         <a href="javascript:;" class="a-btn btn-apply"><span>재발급 신청하기</span></a>
                     </div>
+
+                    <!-- 190522 -->
+                    <div class="card-area">
+                        <div class="card-tit-box">
+                            <h3 class="msc-tit">코레스코 회원카드</h3>
+                        </div>
+                        <div class="card-list">
+                            <div class="item">
+                                <div class="tit-box">
+                                    <p class="title">코레스코 <span class="c-blue">회원카드</span></p>
+                                </div>
+                                <div class="img-box">
+                                    <img src="//img.coresco.co.kr/card/member.png" alt="회원카드 앞면">
+                                    <img src="//img.coresco.co.kr/card/member_back.png" alt="회원카드 뒷면">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="tit-box">
+                                    <p class="title">코레스코 <span class="c-blue">제휴사 회원카드</span></p>
+                                </div>
+                                <div class="img-box">
+                                    <img src="//img.coresco.co.kr/card/partner.png" alt="파트너 회원카드 앞면">
+                                    <img src="//img.coresco.co.kr/card/partner_back.png" alt="파트너 회원카드 뒷면">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
                     
-                   <div class="faq-area">
+                    <div class="faq-area">
                         <div class="faq-tit-box">
                             <h3 class="msc-tit">코레스코 회원카드 재발급 FAQ</h3>
                         </div>
@@ -356,15 +384,17 @@
             </div>
 
             <!-- 팝업 : 회원카드 재발급 STEP1 -->
-            <div id="popApply" class="popup-card popup-apply" style="display: none">
+            <!-- <div id="popApply" class="popup-card popup-apply" style="display: block"> -->
+            <div id="popApply" class="popup-card popup-apply">
                 <div class="popup-wrap">
                     <div class="popup-top-box">
+                        <!-- 190522 -->
                         <h4 class="popup-tit">회원카드<span class="c-red">(제휴사)</span> 재발급신청</h4>
                     </div>
                     <div class="popup-container">
                         <div class="popup-form">
                             <div class="form-box">
-                                <span class="label-com"><label for="memberName">회원이름</label></span>
+                                <span class="label-com"><label for="memberName"><b style="color:#e67300">*</b>회원이름</label></span>
                                 <input type="text" id="memberName" class="input-com" placeholder="이름입력">
                             </div>
                             <div class="form-box">
@@ -526,10 +556,12 @@
 
             <!-- 팝업(공통) STEP2 : 회원카드 배송지 확인 -->
             <div id="popCheck" class="popup-card popup-apply" style="display: block">
+            <!-- <div id="popCheck" class="popup-card popup-apply"> -->
                 <div class="popup-wrap">
                     <div class="popup-top-box">
                         <h4 class="popup-tit">회원카드 배송지 확인</h4>
                     </div>
+                    <!-- 190522 -->
                     <div class="popup-container pd-01">
                         <div class="pop-check-area">
                             <p class="check-txt">
@@ -566,7 +598,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <script src="../../static/js/libs/signature_pad.js"></script>
+                            <script src="//static.coresco.co.kr/js/libs/signature_pad.js"></script>
                             <script>
                                 var wrapper = document.getElementById("signature-pad"),
                                     clearButton = wrapper.querySelector("[data-action=clear]"),
@@ -583,10 +615,11 @@
                                 signaturePad = new SignaturePad(canvas);
                                 clearButton.addEventListener("click", function (event) {
                                     signaturePad.clear();
+                                    wrapper.querySelector(".bg").style.display = 'table';
                                 });
 
-                                $('.m-signature-pad--body').on('click', function() {
-                                    console.log('hi');
+                                $('.m-signature-pad--body').on('mousedown', function() {
+                                    $(this).prev().hide();
                                 });
                             </script>
                         </div>
@@ -605,6 +638,7 @@
                             <a href="javascript:;" class="a-btn"><span>확인</span></a>
                         </div>
                     </div>
+                    <!-- / -->
                     <a href="javascript:;" class="btn-pop-close" title="닫기"></a>
                 </div>
             </div>
