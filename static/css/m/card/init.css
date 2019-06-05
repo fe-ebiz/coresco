@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('//static.coresco.co.kr/css/include/sign_pad.css');
+@import url('//static.coresco.co.kr/css/m/include/sign_pad.css');
 /* @import url('../include/sign_pad.css'); */
 
 /* button */
@@ -199,7 +199,7 @@
 .popup-apply .pop-family-box .pop-family-tit {font-size:13px; line-height:20px; font-weight:bold; color:#002e4a;}
 /*.popup-apply .pop-family-box + .btn-box {padding-top:10px}*/
 /* 구분 추가 */
-.popup-card	.popup-wrap {position: absolute; margin-top: auto; top: 50px;}
+.popup-card	.popup-wrap {position: absolute; margin-top: auto; top: 28px;}
 .popup-apply .popup-form .form-box.division .label-com {}
 .popup-form .form-box.division {margin: 3px auto;}
 .popup-form .form-box.division input {display: inline-block; vertical-align: middle;}
