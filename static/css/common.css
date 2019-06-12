@@ -54,7 +54,7 @@ select::-ms-expand {display:none;}
 .dropdown .dropdown-menu li a:hover {color: #398fe2;}
 .a-btn {position:relative; display:inline-block; box-sizing:border-box; height:57px; padding:18px 50px; text-align:center; border:1px solid #0093f1; border-radius:5px; background:#0093f1}
 .a-btn span {font-size:18px; line-height:18px; color:#fff}
-.btn-cancel {border:1px solid #adadad; background:#adadad}
+.btn-cancel {border:1px solid #adadad; background:#adadad} 
 
 /* 색상 */
 .c-blue {color: #00AEEF;}

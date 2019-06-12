@@ -122,10 +122,13 @@
 .popup-card .pop-check-area .check-txt {font-size:20px; text-align:center; line-height:28px; letter-spacing:-1.3px; color:#303030;}
 
 .popup-card .a-btn {display:block; width:100%; padding:0; height:62px; line-height:62px}
+.popup-card .a-btn.type-02 {height: 42px; line-height: 42px; border: 1px solid #adadad; background: #adadad;}
+.popup-card .a-btn.type-02 span {font-size: 17px; line-height: 1;}
 .popup-card .btn-box {clear:both;}
 .popup-card .btn-box.btn-box02 {vertical-align:middle;}
 .popup-card .btn-box.btn-box02:before, .popup-card .btn-box.btn-box02:after {content:''; display:block; clear:both}
 .popup-card .btn-box.btn-box02 .a-btn {float:right; display:inline-block; width:183px; font-weight:bold; vertical-align:middle; border-radius:3px}
+.popup-card .btn-box.btn-box02 .a-btn.wd-2 {width: 194px;}
 .popup-card .btn-box.btn-box02 a:first-child {float:left}
 .popup-card .btn-box.type-02 {vertical-align:middle;}
 .popup-card .btn-box.type-02:before, .popup-card .btn-box.type-02:after {content:''; display:block; clear:both}
@@ -157,6 +160,7 @@
 .popup-apply .popup-top-box .popup-tit {font-size:20px; text-align:center;}
 .popup-apply .popup-container {position:relative; box-sizing:border-box; padding:10px 35px 18px;}
 .popup-apply .popup-container.pd-01 {padding: 0 35px;}
+.popup-apply .popup-container.pd-02 {padding: 0 35px 20px;}
 .popup-apply .popup-container-f {padding: 0;}
 .popup-apply .popup-form .form-box .label-com {width:86px; font-size:18px; vertical-align:top; padding-top:15px;}
 .popup-apply .popup-form .code-box, .popup-apply .form-box .phone-box, .popup-apply .form-box .address-box {display:table-cell; width:auto;}
@@ -231,7 +235,8 @@
 /* 회원카드 배송지 확인 */
 .popup-card .pop-check-area {padding: 15px 0px 15px;}
 .popup-card .pop-check-area .check-txt {line-height: 1.6; font-size: 17px;}
-.popup-card .pop-check-area .check-txt .deco-line {color:#002a6e; border-bottom:1px solid #002a6e;}
+.popup-card .pop-check-area .check-txt .deco-line {color: #002a6e; border-bottom:1px solid #002a6e;}
+.popup-card .pop-check-area .check-txt .fc-blue {font-weight: 600; letter-spacing: -1.9px; color: #002a6e}
 .popup-card .pop-check-area .ad-check-box {box-sizing:border-box; margin-top: 10px; padding: 5px 19px; border:1px solid #cbcbcb; border-top:2px solid #314c74; background:#fff;}
 .popup-card .pop-check-area .ad-check-box p {display:table;}
 .popup-card .pop-check-area .ad-check-box p span {display:table-cell; line-height: 1.5}
@@ -258,3 +263,10 @@
 .popup-card .family-check-box .family-check-list li {display:table; width:100%; padding-top:15px;}
 .popup-card .family-check-box .family-check-list span {display:table-cell; font-size:18px; color:#242424}
 .popup-card .family-check-box .family-check-list .bd {width:90px;}
+    /* 190612 카드배송지정보 추가 */
+.popup-card .ad-check-box-02 {margin-top:18px; margin-left:8px;}
+.popup-card .ad-check-box-02 .ad-check-txt {padding:7px 0 9px; font-size:15px; text-align:center; color:#fff; border:1px solid #676f7b; background:#314d75;}
+.popup-card .ad-check-box-02 .ad-check-list {padding:0 19px 16px; border:1px solid #d2d2d2; border-top:0; background:#fff;}
+.popup-card .ad-check-box-02 .ad-check-list li {display:table; width:100%; padding-top:15px;}
+.popup-card .ad-check-box-02 .ad-check-list span {display:table-cell; font-size:15px; color:#242424}
+.popup-card .ad-check-box-02 .ad-check-list .bd {width:80px;}
