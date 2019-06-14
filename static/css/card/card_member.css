@@ -1,5 +1,26 @@
 @charset 'utf-8';
 
+html, body, 
+h1, h2, h3, h4, h5,
+div, ul, p {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+ul {
+    list-style-type: none;
+}
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+}
 @media print {
     .page-devide {
         page-break-after: always;
@@ -29,33 +50,133 @@
         border-color: inherit;
     }
     a[href]::after {content: none !important;}
+    
 }
-/* body  {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.wrapper {
+    display: inline-block;
+    width: 800px;
+    min-height: 920px;
+    /* margin: 0 auto; */
     padding: 50px;
     box-sizing: border-box;
-} */
+}
 .outer {
     position: relative;
-    padding: 50px;
+    padding: 4px;
+    background: #595959;
 }
 .sector {
     position: relative;
     width: 100%;
-    height: 500px;
     padding: 1px;
-    outline: 4px solid #595959;
-    border: 2px solid #fff;
-    background: #565656;
+    background: #fff;
     box-sizing: border-box;
+}
+.sector .container {
+    border: 1px solid #595959;
 }
 .container {
     width: 100%;
-    height: 100%;
-    background: #fff;
+    margin: 0 auto;
+    border: 4px solid #595959;
+    box-sizing: border-box;
 }
-.header {
-    
+.header > td {
+    padding: 70px 0 35px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 26px;
+    font-weight: 500;
+}
+.contents {
+    word-break: keep-all;
+}
+.contents > td {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 50px;
+}
+.contents .group {
+    padding: 30px 0px;
+    border: 1px solid #c4c4c4;
+}
+.contents .group > ul {
+    margin: 0 40px;
+    list-style-type: none;
+}
+.contents .group > ul > li {
+    position: relative;
+    padding-left: 15px;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+.contents .group > ul > li:first-child {
+    margin-top: 0;
+}
+.contents .group > ul > li .dot {
+    position: absolute;
+    left: 0;
+}
+.contents .group > ul > li .desc {
+    margin-top: 15px;
+}
+.contents .group > .cmt {
+    margin: 0 40px;
+    margin-top: 30px;
+}
+.contents .date {
+    margin-top: 40px;
+    text-align: center;
+}
+.contents .date .month {
+    margin: 0 30px;
+}
+.contents .write-area {
+    margin-top: 50px;
+    text-align: right;
+}
+.contents .write-area .write-bar {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+.contents .write-area .write-bar span.sign {
+    display: inline-block;
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+}
+.contents .write-area .write-bar .tt {
+    float: left;
+}
+.contents .write-area .write-bar .t {
+    float: right;
+}
+.footer > td {
+    padding:  35px 0 55px;
+    text-align: center;
+}
+.footer > td .logo {
+    width: 150px;
+}
+.footer > td span.logo {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    background: url('http://img.koresco.kr/coresco_logo.png') no-repeat center / 150px;
+}
+.img-wrapper {
+    display: inline-block;
+    /* margin-top: 30px; */
+}
+.clkBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

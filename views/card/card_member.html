@@ -6,41 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>코레스코 회원카드 (가족카드) 신청서</title>
 
-    <link rel="stylesheet" href="../../static/css/card/card_member.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://static.coresco.co.kr/css/card/card_member.css">
+	<!-- <link rel="stylesheet" href="../../static/css/card/card_member.css"> -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
-	<div class="outer">
-		<div class="sector">
-			<table class="container">
-				<tr class="header">
-					<td>
-						코레스코 회원카드 (가족카드) 신청서
-					</td>
-				</tr>
-				<!-- /.header -->
-				<tr class="contents">
-					<td>
-						<table>
-							<tr>
-								<td>
-									
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<!-- /.contents -->
-				<tr class="footer">
-					<td>
-					</td>
-				</tr>
-				<!-- /.footer -->
-			</table>
+	
+	
+	<div class="wrapper" id="wrapper">
+		<div class="outer">
+			<div class="sector">
+				<table class="container">
+					<tr class="header">
+						<td>
+							<h1>
+								코레스코 회원카드 (가족카드) 신청서
+							</h1>
+						</td>
+					</tr>
+					<!-- /.header -->
+					<tr class="contents">
+						<td>
+							<div class="group">
+								<ul>
+									<li><span class="dot">1.</span>본 카드 발급 신청은 주식회사 코레스코의 멤버쉽 회원의 자격을 부여하는 것은 아니며, 이용의 편익을 위한 단순 제휴카드신청입니다.</li>
+									<li><span class="dot">2.</span>본 제휴사 카드를 발급 받음과 동시에 제휴사 회원으로 보다 많은 혜택을 다음과 같이 받을 수 있습니다.
+										<div class='desc'>
+											[ 다 음 ]<br>
+											<p>가. 시설 : 홈페이지에 기재된 당사가 보유하고 있는 모든 시설</p>
+											<p>나. 요 금 : 당사가 내부규정에 따라 정한 요금</p>
+										</div>
+									</li>
+									<li><span class="dot">3.</span>본 신청에 따라 발급된 카드의 유효 기간은 발급일로부터 5년으로 하며, 분실 또는 훼손으로 인하여 재발급을 요청할 경우 추가 비용이 발생됩니다.</li>
+									<li><span class="dot">4.</span>본 제휴카드는 회사의 경영상 이유로 인해 제휴 시설이 변경될 수 있습니다.</li>
+								</ul>
+								<p class="cmt">상기 본인은 상기 내용을 충분히 숙지하였으며, 본인은 자유로운 의사로서 제휴카드 발급에 찬동하여 신청합니다.</p>
+								<p class="date"><span class="year">2019년</span><span class="month">6월</span><span class="day">14일</span></p>
+								<div class="write-area">
+									<p class="cf write-bar"><span class="tt">신청자명 : </span><span class="t">(서명)</span><span class="sign" style="top: -5px; right: 40px;">SIGN</span></p>
+									<p class="cf write-bar"><span class="tt">회원번호 : </span><span class="t"></span></p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- /.contents -->
+					<tr class="footer">
+						<td>
+							<img src="./coresco_logo.png" alt="코레스코" class="logo">
+						</td>
+					</tr>
+					<!-- /.footer -->
+				</table>
+			</div>
 		</div>
 	</div>
 
-	<div class="page-divide"></div>
 
+	<div id="img-wrapper" class="img-wrapper"></div>
+	<button id="clkBtn" class='clkBtn'>클릭</button>
+
+	<script>
+		function makeImg() {
+			html2canvas(document.getElementById('wrapper'), {
+				onrendered: function(canvas) {
+					var myImg = canvas.toDataURL();
+					// downloadURI(myImg, 'contract.jpg');
+					document.getElementById('img-wrapper').innerHTML='<img src=' + canvas.toDataURL("image/jpg") + '>';
+				}
+			});
+
+			// function downloadURI(uri, name) {
+			// 	var link = document.createElement('a');
+			// 	link.download = name;
+			// 	link.href = uri;
+			// 	document.body.appendChild(link);
+			// 	link.click();
+			// }
+		}
+		$('#clkBtn').on('click', function() {
+			makeImg();
+		});
+	</script>
 </body>
 </html>
