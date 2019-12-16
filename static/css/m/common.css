@@ -474,6 +474,8 @@ footer {background-color:#323232;}
 .side-banner a {display:block; position:relative; width:102px; height:100%}
 .side-banner a img {position:relative;}
 /* 20180418 성수기 회원예약접수 */
+.side-banner.banner-comm {z-index:12; left:auto; right:20px; bottom:100px;}
+.side-banner.banner-comm a {width:120px; height:130px;}
 .side-banner.banner-summer {z-index:11; left:auto; right:3px; bottom:80px;}
 .side-banner.banner-summer a {width:156px;}
 .side-banner.banner-summer a {width:156px;}
@@ -616,13 +618,14 @@ footer {background-color:#323232;}
 .popup-member9 .evtLd {background: #f2821a;}
 
 /* 181127 12월 회원사전예약 */
-.popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;}
+/* .popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;}
 .popup-season.season-december .evtLd {background: #b48ac6;}
 .popup-season.season-december .evtLd .ld-01 {background: #885fad;}
 .popup-season.season-december .evtLd .ld-01 .btn-box {background: #af85c3;}
-.popup-season.season-december .evtLd .ld-01 .btn-box .btn-move {border-color: #73479a; background: #73479a}
+.popup-season.season-december .evtLd .ld-01 .btn-box .btn-move {border-color: #73479a; background: #73479a} */
 
 /* 190110 1월 회원사전예약 */
+.d-block {display: block !important;}
 .popup-season.season-january .btn-box a {border-color: #974b3e; background: #974b3e;}
 .popup-season.season-january .evtLd {background: #bab2ad ;}
 .popup-season.season-january .evtLd .ld-01 {background: #bab2ad ;}

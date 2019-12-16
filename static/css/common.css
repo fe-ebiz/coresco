@@ -279,7 +279,12 @@ select::-ms-expand {display:none;}
 .popup-season .btn-box a {border-color:#bf3109; background: #bf3109;}
 
 /* 181127 12월 회원사전예약 */
-.popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;}
+.d-block {display: block !important;}
+/* .popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;} */
+.popup-season.season-december .btn-box a {border-color: #d00000; background: #d00000;}
+.popup-season.season-december .popup-container {
+    max-height: 880px;
+}
 
 /* 190110 1월 회원사전예약 */
 .popup-season.season-january .btn-box a {border-color: #974b3e; background: #974b3e;}

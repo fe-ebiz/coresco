@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css?ver=20171201120520">
     <link rel="stylesheet" href="http://static.coresco.co.kr/css/m/common.css" />
     <link rel="stylesheet" href="http://static.coresco.co.kr/css/m/index.css">
-    <!-- <link rel="stylesheet" href="../../static/css/m/common.css">
-    <link rel="stylesheet" href="../../static/css/m/index.css"> -->
+    <!--<link rel="stylesheet" href="../../src/css/m/common.css">-->
+    <!-- <link rel="stylesheet" href="../../src/css/m/index.css">-->
 
     <script type="text/javascript" src="http://static.coresco.co.kr/js/m/jquery-1.10.2.min.js?ver=20171201120520"></script>
     <script type="text/javascript" src="http://static.coresco.co.kr/js/m/swiper.min.js?ver=20171201120520"></script>
@@ -933,104 +933,669 @@
             </div>
         </section>
 
-        <!-- 191216 작업영역 : 2019 년 회원 사전예약 -->
-        <div class="side-banner banner-comm banner-memberRsvt2019">
-            <!-- 카드 발급자 -->
-            <!-- <a href="javascript:;" onclick="popupOn($('#memberRsvt2019'), 'auto');"><img src="http://img.coresco.co.kr/evtLd/memberRsvt2019/bn.png" alt="2019년 12월 회원사전예약"></a> -->
-            <!-- 카드 미발급자 -->
-            <a href="javascript:;" onclick="popupOn($('#memberRsvt2019.card-no'), 'auto');"><img src="http://img.coresco.co.kr/evtLd/memberRsvt2019/bn.png" alt="2019년 12월 회원사전예약"></a>
-        </div>
-        <!-- / -->
+        <!-- 20180416 회원카드 발급 배너 추가 -->
+        <!-- 20180516 주석처리 -->
+        <!--<div class="side-banner">
+		    <a href="#none"><img src="http://img.coresco.co.kr/m/img_side_bar3.png" alt="혜택을 누리자! 회원카드 재발급"></a>
+		</div>-->
 
-        <!-- 191216 작업영역 : 2019 회원 사전예약 -->
-        <!-- 카드 발급자 -->
-        <div id="memberRsvt2019" class="popup-com popup-season season-december" style="display:none">
+        <!-- 20180518 성수기 회원예약접수 배너 추가 -->
+        <!-- 180709 주석처리 -->
+        <!--<div class="side-banner banner-summer">
+		    <a href="javascript:;"><img src="http://img.coresco.co.kr/m/img_side_bar4.png" alt="2018 SUMMER 성수기 회원 예약접수"></a>
+		</div>-->
+
+        <!-- 180709 성수기 시즌 즉시 확정 이벤트 배너 추가 -->
+        <!-- 180816 href 수정/ 페이지 이동 -->
+        <!-- 180820 레이어팝업으로 변경 -->
+        <!--<div class="side-banner banner-season">
+		    <a href="javascript:;"><img src="http://img.coresco.co.kr/evtLd/pkSeasonCf/bn.png" alt="성수기 시즌 즉시 확정 이벤트"></a>
+		</div>-->
+
+        <!-- 180823 2018년 9월 회원 사전예약 배너 추가 -->
+        <!--<div class="side-banner banner-member9">
+		    <a href="javascript:;"><img src="http://img.coresco.co.kr/evtLd/memberRsvt1809/bn.png" alt="2018년 9월 회원사전예약"></a>
+		</div>-->
+
+        <!-- 181127 2018년 12월 회원 사전예약 배너 추가 -->
+        <!-- <div class="side-banner banner-member9">
+            <a href="javascript:;"><img src="http://img.coresco.co.kr/evtLd/memberRsvt/bn_december.png" alt="2018년 12월 회원사전예약"></a>
+        </div> -->
+
+        <!-- 20180516 상담신청 팝업 -->
+        <!-- 20180518 멀티클래스 type-01 추가 -->
+        <!-- 180704 회원등재 상담신청 폼 추가 및 수정 -->
+        <div id="popConsult" class="popup-com type-01 popup-consult" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-top-box">
+                    <h4 class="popup-tit">경매로 낙찰받은 지분 취득자는<br><em>회원으로 등재 후, 회원혜택</em>을 받으실 수 있습니다.</h4>
+                </div>
+                <div class="popup-container">
+                    <p class="popup-con-tit">회원등재 상담신청</p>
+                    <div class="popup-form">
+                        <div class="form-box">
+                            <span class="label-com"><label for="memberName">신청자</label></span>
+                            <input type="text" id="memberName" class="input-com" placeholder="이름입력">
+                        </div>
+                        <!-- 180704 이메일 수정 -->
+                        <div class="form-box">
+                            <span class="label-com"><label for="email1">이메일</label></span>
+                            <div class="email-box">
+                                <input type="text" id="email1" class="input-com nth-1" placeholder="">
+                                <span>@</span>
+                                <input type="text" class="input-com nth-2" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <span class="label-com"><label>연락처</label></span>
+                            <div class="phone-box">
+                                <div class="sel-area">
+                                    <select class="sel-com">
+                                        <option>010</option>
+                                        <option>011</option>
+                                    </select>
+                                </div>
+                                <span class="line"></span>
+                                <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
+                            </div>
+                        </div>
+                        <!-- 180704 경매호수 및 경매구좌 추가 -->
+                        <div class="form-box">
+                            <span class="label-com"><label for="roomNum">경매호수</label></span>
+                            <input type="text" id="roomNum" class="input-com" placeholder="101호, 102호 형태로 입력">
+                        </div>
+                        <div class="form-box bor-b">
+                            <span class="label-com"><label for="auction1">경매구좌</label></span>
+                            <div class="acution-box">
+                                <div class="acution-input-box clr">
+                                    <input type="number" id="auction1" class="input-com nth-1" placeholder="">
+                                    <span>/</span>
+                                    <input type="number" class="input-com nth-2" placeholder="">
+                                </div>
+                                <p class="i-s">1/10, 1/100 등으로 표기하세요.</p>
+                            </div>
+                        </div>
+                        <!-- 180704 텍스트 수정 -->
+                        <p class="i-s">상담 신청하시면 회원 등재 방법 및, 회원 혜택에 대해서 안내해 드립니다.</p>
+                        <p class="i-s">회원으로의 등재 비용은 전산등록비, 회원관리비, 명의개서수수료를 포함하여 1/100 구좌당 100만 원입니다.</p>
+                    </div>
+                    <div class="btn-box">
+                        <a href="javascript:;" class="a-btn btn-pop-apply"><span>상담 신청하기</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180516 상담신청 완료 팝업 -->
+        <!-- 20180518 멀티클래스 type-01 추가 및 클래스 변경 -->
+        <div id="popConsultEnd" class="popup-com type-01 popup-end" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-container">
+                    <p class="consult-end-tit">
+                        <em>회원등재 상담신청이 완료</em>되었습니다.
+                    </p>
+                    <p class="consult-end-txt">담당자 확인 후, 입력해주신 연락처로<br>연락 드리겠습니다.</p>
+                    <div class="btn-box">
+                        <a href="javascript:;" class="a-btn btn-pop-apply"><span>닫기</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180518 성수기 회원 예약접수 팝업 STEP1 -->
+        <div id="popSummer" class="popup-com type-02 popup-summer" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-top-box">
+                    <h4 class="popup-tit">성수기 회원 예약 접수</h4>
+                </div>
+                <div class="popup-container">
+                    <div class="popup-form">
+                        <div class="form-box">
+                            <span class="label-com"><span class="c-point">* </span><label for="memberName1">회원이름</label></span>
+                            <input type="text" id="memberName1" class="input-com" placeholder="이름입력">
+                        </div>
+                        <div class="form-box">
+                            <span class="label-com"><span class="c-point"> </span><label for="memberNum1">회원번호</label></span>
+                            <input type="tel" id="memberNum1" class="input-com" placeholder="12345678">
+                        </div>
+                        <!-- 180529 주민번호 추가 -->
+                        <div class="form-box">
+                            <span class="label-com"><span class="c-point"> </span><label for="memberCode">주민번호</label></span>
+                            <div class="code-box">
+                                <input type="tel" id="memberCode" class="input-com fir" placeholder="주민번호 앞자리">
+                                <span class="line"></span>
+                                <input type="tel" class="input-com last" placeholder="뒤 3자리">
+                                <span class="code-pwd">****</span>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <span class="label-com"><span class="c-point">* </span><label>연락처</label></span>
+                            <div class="phone-box">
+                                <div class="sel-area">
+                                    <select class="sel-com">
+                                        <option>010</option>
+                                        <option>011</option>
+                                    </select>
+                                </div>
+                                <span class="line"></span>
+                                <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="popup-txt">
+                        <span class="c-point">* </span>항목은 필수입력사항입니다.
+                    </p>
+                    <div class="btn-box">
+                        <a href="javascript:;" class="a-btn"><span>다음</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180518 성수기 회원 예약접수 팝업 STEP2 : 다음 버튼 클릭 시 -->
+        <div id="popSummerNext" class="popup-com type-02 popup-summer" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-top-box">
+                    <h4 class="popup-tit">성수기 회원 예약 접수</h4>
+                </div>
+                <div class="popup-container">
+                    <div class="popup-form">
+                        <div class="form-box">
+                            <span class="label-com">입실일자</span>
+                            <p class="cal-txt btn-cal">2018-08-06 (월)</p>
+                        </div>
+                        <div class="form-box">
+                            <span class="label-com">이용일수</span>
+                            <div class="sel-box day-box">
+                                <div class="sel-area">
+                                    <select class="sel-com">
+                                        <option>이용일수 선택</option>
+                                        <option>1박 2일</option>
+                                        <option>2박 3일</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box type-1 fir">
+                            <span class="label-com">객실수량</span>
+                            <div class="sel-box room-box">
+                                <div class="sel-area">
+                                    <select class="sel-com">
+                                        <option>1개</option>
+                                        <option>2개</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box type-1">
+                            <span class="label-com">인원수</span>
+                            <div class="sel-box num-box">
+                                <div class="sel-area">
+                                    <select class="sel-com">
+                                        <option>1명</option>
+                                        <option>2명</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="javascript:;" class="a-btn"><span>신청하기</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180518 성수기 회원 예약접수 팝업 STEP2 // 달력 -->
+        <div id="popSummerCal" class="popup-com popup-cal" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="sltCal-sec clr">
+                    <h3>이용날짜선택</h3>
+                    <div class="cal-inner">
+                        <p class="p-1">
+                            <span class="cal-btn-prev control" onclick="javascript:;"><img src="http://img.coresco.co.kr/cal_btn_prev.gif" alt=""></span>
+                            <em>2018<span>년</span> 07<span>월</span></em>
+                            <span class="cal-btn-next control" onclick="javascript:;"><img src="http://img.coresco.co.kr/cal_btn_next.gif" alt=""></span>
+                        </p>
+                        <table class="cal-tb">
+                            <colgroup>
+                                <col style="">
+                                <col style="">
+                                <col style="">
+                                <col style="">
+                                <col style="">
+                                <col style="">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="month_00">
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>01</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>02</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>03</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>04</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>05</div>
+                                    </td>
+                                </tr>
+                                <tr id="month_01">
+                                    <td class="off show_date">
+                                        <div>06</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>07</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>08</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>09</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>10</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>11</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>12</div>
+                                    </td>
+                                </tr>
+                                <tr id="month_02">
+                                    <td class="off show_date">
+                                        <div>13</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>14</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>15</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>16</div>
+                                    </td>
+                                    <td class="off show_date">
+                                        <div>17</div>
+                                    </td>
+                                    <td class="chkIn ">
+                                        <div>18<img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"></div>
+                                    </td>
+                                    <td class="sat sat-bgc">
+                                        <div>19</div>
+                                    </td>
+                                </tr>
+                                <tr id="month_03">
+                                    <td class="sun sun-bgc">
+                                        <div>20</div>
+                                    </td>
+                                    <td class="">
+                                        <div>21</div>
+                                    </td>
+                                    <td class="sun sun-bgc">
+                                        <div>22</div>
+                                    </td>
+                                    <td class="">
+                                        <div>23</div>
+                                    </td>
+                                    <td class="">
+                                        <div>24</div>
+                                    </td>
+                                    <td class="">
+                                        <div>25</div>
+                                    </td>
+                                    <td class="sat sat-bgc">
+                                        <div>26</div>
+                                    </td>
+                                </tr>
+                                <tr id="month_04">
+                                    <td class="sun sun-bgc">
+                                        <div>27</div>
+                                    </td>
+                                    <td class="">
+                                        <div>28</div>
+                                    </td>
+                                    <td class="">
+                                        <div>29</div>
+                                    </td>
+                                    <td class="">
+                                        <div>30</div>
+                                    </td>
+                                    <td class="">
+                                        <div>31</div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                    <td class="prev_date">
+                                        <div></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180518 성수기 회원 예약접수 팝업 STEP3 : 신청하기 버튼 클릭 시 -->
+        <div id="popSummerCheck" class="popup-com type-02 popup-summer" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-top-box">
+                    <h4 class="popup-tit">예약 정보 확인</h4>
+                </div>
+                <div class="popup-container">
+                    <div class="pop-check-area">
+                        <p class="check-txt">
+                            <em class="bd">김지영</em> 회원님.<br>
+                            예약하신 정보를 다시 한번 확인해주십시오.
+                        </p>
+                        <div class="check-table-box">
+                            <table class="check-table">
+                                <colgroup>
+                                    <col style="">
+                                    <col style="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>입실일자</th>
+                                        <td>2018-08-06 (월)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>이용일수</th>
+                                        <td>7박 8일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>객실수량</th>
+                                        <td>2개</td>
+                                    </tr>
+                                    <tr>
+                                        <th>인원수</th>
+                                        <td>2명</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-box type-02">
+                        <a href="javascript:;" class="a-btn btn-cancel"><span>수정</span></a>
+                        <a href="javascript:;" class="a-btn"><span>접수하기</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 20180518 성수기 회원 예약접수 팝업 STEP4 : 접수하기 버튼 클릭 시 -->
+        <div id="popSummerEnd" class="popup-com type-01 popup-end" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-container">
+                    <p class="consult-end-tit">
+                        <em>성수기 회원 예약이<br>정상 접수되었습니다</em>
+                    </p>
+                    <p class="consult-end-txt">추첨 후 남겨주신 연락처로 당첨 여부를<br>안내해드립니다.</p>
+                    <div class="btn-box">
+                        <!-- 20180517 멀티클래스 제거 -->
+                        <a href="javascript:;" class="a-btn"><span>닫기</span></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="a-i-x btn-pop-close" title="닫기"></a>
+            </div>
+        </div>
+
+        <!-- 180820 성수기 시즌 즉시 확정 이벤트 레이어팝업 -->
+        <div id="popSeason" class="popup-com popup-season" style="display:none">
             <div class="pop_Bg_bk"></div>
             <div class="popup-wrap">
                 <div class="popup-container">
                     <div class="evtLd">
-                        <div class="picture">
-                            <img class="btn-move d-block" src="http://img.coresco.co.kr/m/evtLd/memberRsvt2019/december.jpg" alt="2018년 12월 회원사전예약 시설리스트">
-                        </div>
-                        <div class="evt-box">
-                            <div class="form-area">
-                                <div class="form-box">
-                                    <span class="label-com"><span class="c-point">* </span><label>시설선택</label></span>
-                                    <div class="phone-box sel-box-2">
-                                        <div class="sel-area">
-                                            <select class="sel-com">
-                                                <option value="">시설선택</option>
-                                                <option value="">오션투유리조트</option>
-                                                <option value="">코레스코 치악</option>
-                                            </select>
-                                        </div>
+                        <img src="http://img.coresco.co.kr/m/evtLd/pkSeasonCf/img_all.jpg" alt="회원을, 회원을 위한 성수기 시즌 즉시 확정 이벤트">
+                    </div>
+
+                    <div class="evt-box">
+                        <div class="form-area">
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label>시설선택</label></span>
+                                <div class="phone-box sel-box-2">
+                                    <div class="sel-area">
+                                        <select class="sel-com">
+                                            <option value="">시설선택</option>
+                                            <option value="">오션투유리조트</option>
+                                            <option value="">강릉씨베이호텔</option>
+                                            <option value="">연호리조트</option>
+                                            <option value="">코레스코 치악</option>
+                                        </select>
                                     </div>
                                 </div>
-
-                                <div class="form-box">
-                                    <span class="label-com"><span class="c-point">* </span><label for="memberName1">회원이름</label></span>
-                                    <input type="text" id="memberName1" class="input-com" placeholder="이름입력">
-                                </div>
-
-                                <div class="form-box">
-                                    <span class="label-com"><span class="c-point"> </span><label for="memberNum1">회원번호</label></span>
-                                    <input type="tel" id="memberNum1" class="input-com" placeholder="12345678">
-                                </div>
-
-                                <div class="form-box">
-                                    <span class="label-com"><span class="c-point"> </span><label for="memberCode">주민번호</label></span>
-                                    <div class="code-box">
-                                        <input type="tel" id="memberCode" class="input-com fir" placeholder="앞자리">
-                                        <span class="line"></span>
-                                        <input type="tel" class="input-com last" placeholder="뒤 3자리">
-                                        <span class="code-pwd">****</span>
-                                    </div>
-                                </div>
-
-                                <div class="form-box">
-                                    <span class="label-com"><span class="c-point">* </span><label>연락처</label></span>
-                                    <div class="phone-box">
-                                        <div class="sel-area">
-                                            <select class="sel-com">
-                                                <option>010</option>
-                                                <option>011</option>
-                                            </select>
-                                        </div>
-                                        <span class="line"></span>
-                                        <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
-                                    </div>
-                                </div>
-
                             </div>
-                            <p class="point-txt">
-                                <span class="c-point">* </span>항목은 필수입력사항입니다.
-                            </p>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label for="memberName1">회원이름</label></span>
+                                <input type="text" id="memberName1" class="input-com" placeholder="이름입력">
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point"> </span><label for="memberNum1">회원번호</label></span>
+                                <input type="tel" id="memberNum1" class="input-com" placeholder="12345678">
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point"> </span><label for="memberCode">주민번호</label></span>
+                                <div class="code-box">
+                                    <input type="tel" id="memberCode" class="input-com fir" placeholder="앞자리">
+                                    <span class="line"></span>
+                                    <input type="tel" class="input-com last" placeholder="뒤 3자리">
+                                    <span class="code-pwd">****</span>
+                                </div>
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label>연락처</label></span>
+                                <div class="phone-box">
+                                    <div class="sel-area">
+                                        <select class="sel-com">
+                                            <option>010</option>
+                                            <option>011</option>
+                                        </select>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="point-txt">
+                            <span class="c-point">* </span>항목은 필수입력사항입니다.
+                        </p>
+                        <div class="btn-box">
+                            <a href="javascript:;" class="a-btn"><span>예약하기</span></a>
+                        </div>
+                        </section>
+                    </div>
+                    <a href="javascript:;" class="btn-pop-close"><span class="a-i-x"></span>닫기</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 181127 2018년 12월 회원 사전예약 레이어팝업 -->
+        <div id="popMember9" class="popup-com popup-season season-december" style="display:none">
+            <div class="pop_Bg_bk"></div>
+            <div class="popup-wrap">
+                <div class="popup-container">
+                    <div class="evtLd ld-01">
+                        <div class="ld-01">
+                            <img src="http://img.coresco.co.kr/m/evtLd/memberRsvt/img_december_01.png" alt="2018년 12월 회원사전예약">
                             <div class="btn-box">
-                                <a href="javascript:;" class="a-btn"><span>예약하기</span></a>
+                                <a href="javascript:;" class="a-btn btn-move"><span>사전예약하기</span></a>
                             </div>
                         </div>
-                        <a href="javascript:;" class="btn-pop-close"><span class="a-i-x"></span>닫기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 카드 미발급자 -->
-        <div id="memberRsvt2019" class="popup-com popup-season season-december card-no" style="display:none">
-            <div class="pop_Bg_bk"></div>
-            <div class="popup-wrap">
-                <div class="popup-container">
-                    <div class="evtLd">
-                        <div class="picture">
-                            <a href="http://www.koresco.kr/member/?dd=WxsfQD9UOg==">
-                                <img src="http://img.coresco.co.kr/m/evtLd/memberRsvt2019/december.jpg" alt="2018년 12월 회원사전예약 시설리스트">
-                            </a>
+                        <div class="ld-02">
+                            <img src="http://img.coresco.co.kr/m/evtLd/memberRsvt/img_december_02.png" alt="2018년 12월 회원사전예약 시설리스트">
+                            <div class="hidden">
+                                <ul>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>01 강원>고성(속초) <em>오션투유리조트</em></p>
+                                    </li>
+                                    <li>
+                                        <span>체인</span>
+                                        <p>02 강원>강릉 <em>씨베이 호텔</em></p>
+                                    </li>
+                                    <!-- <li>
+                                        <span>체인</span>
+                                        <p>02 강원>아산(천안) <em>BS콘도</em></p>
+                                    </li> -->
+                                    <li>
+                                        <span>체인</span>
+                                        <p>03 강원>속초 <em>연호리조트</em></p>
+                                    </li>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>04 강원>횡성 <em>코레스코 치악</em></p>
+                                    </li>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>05 경기>평택 <em>라마다앙코르호텔</em></p>
+                                    </li>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>06 전북>남원 <em>남원중앙하이츠</em></p>
+                                    </li>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>07 강원>양양 <em>낙산메리엘콘도</em></p>
+                                    </li>
+                                    <li>
+                                        <span>지점</span>
+                                        <p>08 제주>서귀포 <em>호텔빠레브</em></p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <a href="javascript:;" class="btn-pop-close"><span class="a-i-x"></span>닫기</a>
                     </div>
+
+                    <div class="evt-box">
+                        <div class="form-area">
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label>시설선택</label></span>
+                                <div class="phone-box sel-box-2">
+                                    <div class="sel-area">
+                                        <select class="sel-com">
+                                            <option value="">시설선택</option>
+                                            <option value="">오션투유리조트</option>
+                                            <option value="">강릉씨베이호텔</option>
+                                            <option value="">연호리조트</option>
+                                            <option value="">코레스코 치악</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label for="memberName1">회원이름</label></span>
+                                <input type="text" id="memberName1" class="input-com" placeholder="이름입력">
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point"> </span><label for="memberNum1">회원번호</label></span>
+                                <input type="tel" id="memberNum1" class="input-com" placeholder="12345678">
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point"> </span><label for="memberCode">주민번호</label></span>
+                                <div class="code-box">
+                                    <input type="tel" id="memberCode" class="input-com fir" placeholder="앞자리">
+                                    <span class="line"></span>
+                                    <input type="tel" class="input-com last" placeholder="뒤 3자리">
+                                    <span class="code-pwd">****</span>
+                                </div>
+                            </div>
+
+                            <div class="form-box">
+                                <span class="label-com"><span class="c-point">* </span><label>연락처</label></span>
+                                <div class="phone-box">
+                                    <div class="sel-area">
+                                        <select class="sel-com">
+                                            <option>010</option>
+                                            <option>011</option>
+                                        </select>
+                                    </div>
+                                    <span class="line"></span>
+                                    <input type="tel" class="input-com" placeholder="'-'를 제외하고 입력">
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="point-txt">
+                            <span class="c-point">* </span>항목은 필수입력사항입니다.
+                        </p>
+                        <div class="btn-box">
+                            <a href="javascript:;" class="a-btn"><span>예약하기</span></a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="btn-pop-close"><span class="a-i-x"></span>닫기</a>
                 </div>
             </div>
         </div>
-        <!-- / -->
+
 
 
 
