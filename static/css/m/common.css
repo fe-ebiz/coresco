@@ -575,6 +575,19 @@ footer {background-color:#323232;}
 .popup-summer .check-table-box .check-table td {padding:7px 0 5px 15px; font-size:12px; text-align:left; background:#fff}
 #popSummerEnd .popup-wrap {background:#fff}
 
+/* 191217 1029년 회원사전예약 모바일 랜딩 */
+.landing-page .popup-season.season-december .popup-wrap {
+    top: 0;
+    padding: 0;
+}
+/* .landing-page .popup-season.season-december.card-no .pop_Bg_bk {
+    opacity: 1;
+    background-color: #c90300;
+} */
+.landing-page .popup-season.season-december .popup-wrap .popup-container {
+    border: none;
+}
+
 /* 180820 성수기 시즌즉시 확정 이벤트 예약 접수 팝업 */
 .popup-season {height:auto; top:0; padding:0}
 .popup-season .popup-wrap {position:absolute; max-width:100%; height:auto; top:30px; top: 6px; left:0; margin-top:0; margin-left:0; padding:0 30px; border:0;background:none;}
