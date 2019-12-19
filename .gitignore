@@ -59,3 +59,4 @@ _media/
 _tmp/
 img/
 .sass-cache/
+*.zip
