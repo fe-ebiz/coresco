@@ -580,6 +580,10 @@ footer {background-color:#323232;}
     top: 0;
     padding: 0;
 }
+.landing-page .popup-season.season-december .btn-pop-close,
+.landing-page .popup-season.season-december .btn-pop-close-2 {
+    display: none;
+}
 /* .landing-page .popup-season.season-december.card-no .pop_Bg_bk {
     opacity: 1;
     background-color: #c90300;
