@@ -624,8 +624,6 @@ footer {background-color:#323232;}
 .popup-season .evtLd .ld-01 {padding:10% 0 0; background: #FEAD0F;}
 .popup-season .evtLd .ld-01 .btn-box {margin-top:0; padding:5% 4% 0;}
 .popup-season .evtLd .ld-01 .btn-box .btn-move {border-color:#3372d8; background:#3372d8}
-.popup-season .a-btn,
-.popup-season .evtLd .ld-01 .btn-box .btn-move {border-color:#be3109; background:#be3109}
 .popup-season .evtLd .ld-01 .btn-box .btn-move span {font-size:15px;}
 .popup-season .evtLd .ld-02 {padding:3% 4% 6%}
 
@@ -635,8 +633,9 @@ footer {background-color:#323232;}
 .popup-member9 .evtLd {background: #f2821a;}
 
 /* 181127 12월 회원사전예약 */
-/* .popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;}
-.popup-season.season-december .evtLd {background: #b48ac6;}
+/* .popup-season.season-december .btn-box a {border-color: #9168b2; background: #9168b2;} */
+.popup-season.season-december .btn-box a {border-color: #0890a3; background: #0890a3;}
+/* .popup-season.season-december .evtLd {background: #b48ac6;}
 .popup-season.season-december .evtLd .ld-01 {background: #885fad;}
 .popup-season.season-december .evtLd .ld-01 .btn-box {background: #af85c3;}
 .popup-season.season-december .evtLd .ld-01 .btn-box .btn-move {border-color: #73479a; background: #73479a} */
