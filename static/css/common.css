@@ -66,6 +66,8 @@ select::-ms-expand {display:none;}
 
 .f-bd {font-weight:600}
 
+.bg-no {background: none !important;}
+
 
 /* 전체 */
 #wrap {position:relative; min-width: 1000px;}
